@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-blah blah blah
-=======
-test from Thomas Bell
->>>>>>> Stashed changes
+Test from Idiot ME
