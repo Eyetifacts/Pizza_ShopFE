@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar")],
   theme: {
     colors: {
       blue: "#1fb6ff",
