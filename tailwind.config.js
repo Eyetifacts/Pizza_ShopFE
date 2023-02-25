@@ -13,6 +13,7 @@ module.exports = {
       gray: "#8492a6",
       white: "#FFF",
       "gray-light": "#d3dce6",
+      black: "#000",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
@@ -24,8 +25,17 @@ module.exports = {
         "9xl": "128rem",
       },
       borderRadius: {
-        "4xl": "2rem",
+        "4xl": "2rem"
       },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '4': '4px',
+        '6': '6px',
+        '8': '8px',
+      }
     },
   },
 };
