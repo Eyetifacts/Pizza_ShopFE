@@ -1,5 +1,5 @@
 import React from 'react';
-import normalBake from '../images/normal-bake.png'
+import { images } from '../constants';
 
 const MenuMap = () => {
   return (
@@ -11,7 +11,7 @@ const MenuMap = () => {
           <div className="flex flex-row justify-center items-center my-3 gap-4 flex-wrap">
               {['Specials', 'Pizza', 'Papa Bowls', 'Papa Bites', 'Papadias', 'Wraps', 'Sides', 'Desserts', 'Drinks', 'Extras'].map((item) => (
                 <div>
-                    <img src={normalBake} className="rounded-full  w-32" />
+                    <img src={images.pizza} className="rounded-full  w-32" />
                     <p className="text-center font-semibold my-3">{item}</p>
                 </div>
               ))}
@@ -20,4 +20,4 @@ const MenuMap = () => {
   )
 }
 
-export default MenuMap
+export default MenuMap;
