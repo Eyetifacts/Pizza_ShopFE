@@ -14,6 +14,7 @@ module.exports = {
       white: "#FFF",
       "gray-light": "#d3dce6",
       black: "#000",
+      red: "#CE2735",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
@@ -23,6 +24,7 @@ module.exports = {
       spacing: {
         "8xl": "96rem",
         "9xl": "128rem",
+        "128": "32rem"
       },
       borderRadius: {
         "4xl": "2rem"
@@ -36,6 +38,6 @@ module.exports = {
         '6': '6px',
         '8': '8px',
       }
-    },
+    }
   },
 };

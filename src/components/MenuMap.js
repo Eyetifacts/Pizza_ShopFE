@@ -11,7 +11,7 @@ const MenuMap = () => {
           <div className="flex flex-row justify-center items-center my-3 gap-4 flex-wrap">
               {['Specials', 'Pizza', 'Papa Bowls', 'Papa Bites', 'Papadias', 'Wraps', 'Sides', 'Desserts', 'Drinks', 'Extras'].map((item) => (
                 <div>
-                    <img src={images.pizza} className="rounded-full  w-32" />
+                    <img src={images.pizza} alt="menu-section" className="rounded-full  w-32" />
                     <p className="text-center font-semibold my-3">{item}</p>
                 </div>
               ))}
