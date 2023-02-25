@@ -9,10 +9,11 @@ const Hero = () => {
           <source src={pizzaHeroVideo} type="video/mp4" />
         </video>
         <div className="absolute flex flex-col top-0 bottom-0 left-0 right-0 justify-center items-start bg-black bg-opacity-10">
-            <h1 className="text-white bg-black px-3 py-2 ml-5 mb-5 text-3xl font-semibold -skew-y-6 items-start flex flex-row">
+          <div>
+            <h1 className="text-white bg-black px-3 py-2 ml-5 mb-8 text-3xl font-semibold -skew-y-6 items-start flex flex-row w-80 justify-center">
               STARTING AT $12 <span className="text-xl underline ml-1"> 99</span>
             </h1>
-            <h2 className="text-white bg-red px-3 text-xl py-1 ml-5 font-semibold">
+            <h2 className="text-white bg-red-600 px-3 text-xl py-1 ml-5 w-40 font-semibold">
               LIMITED TIME
             </h2>
             <h2 className="text-white text-5xl font-bold p-3 ml-5 mt-5 drop-shadow-xl">
@@ -29,6 +30,7 @@ const Hero = () => {
                 ORDER DELIVERY
               </button>
             </div>
+          </div>
 
         </div>
       </div>
