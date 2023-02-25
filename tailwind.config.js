@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  plugins: [require("tailwind-scrollbar")],
   theme: {
     colors: {
       blue: "#1fb6ff",
