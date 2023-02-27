@@ -6,6 +6,9 @@ import fullMenu from '../images/full-menu.png';
 import createOwn from '../images/create-your-own.png';
 import party from '../images/party.png';
 import rewards from '../images/rewards.png';
+import mobile1 from '../images/mobile1.png';
+import mobile2 from '../images/mobile2.png';
+
 
 export default {
     pizza,
@@ -15,5 +18,7 @@ export default {
     fullMenu,
     createOwn,
     party,
-    rewards
+    rewards,
+    mobile1,
+    mobile2
 };

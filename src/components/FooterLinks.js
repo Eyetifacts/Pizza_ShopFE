@@ -3,37 +3,36 @@ import storefront from '../images/storefront.webp'
 
 const FooterLinks = () => {
 	return (
-		<div>
-			<div>
-				{/*
-				grid layout?
-				dropdowns for small screen...how to do best w/tailwind
-				or just standard media queries? */}
-				<div>
-					<h3>Our Company</h3>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
+		<div className="flex flex-col lg:flex-row items-center lg:h-80">
+		
+			<div className="align-top flex flex-row my-8 gap-20 justify-evenly grow">
+				<div className="flex flex-col ml-10 gap-2 text-gray-500">
+					<h3 className="font-semibold text-lg text-black">Our Company</h3>
+					<a href='/'>About Papa Johns</a>
+					<a href='/'>Investor Relations</a>
+					<a href='/'>Careers</a>
+					<a href='/'>No Contact Delivery</a>
 				</div>
-				<div>
-					<h3>Our Pizza</h3>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
+				<div className="flex flex-col gap-2 text-gray-500">
+					<h3 className="font-semibold text-lg text-black">Our Pizza</h3>
+					<a href='/'>Pizza Pages</a>
+					<a href='/'>Nutrional Info</a>
+					<a href='/'>Allergen Guide</a>
+					<a href='/'>Ingredients</a>
+					<a href='/'>Quality Guarantee</a>
 				</div>
-				<div>
-					<h3>Help</h3>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
-					<a href='/'>link</a>
+				<div className="flex flex-col gap-2 text-gray-500">
+					<h3 className="font-semibold text-lg text-black">Help</h3>
+					<a href='/'>Customer Service</a>
+					<a href='/'>Ordering</a>
+					<a href='/'>Gift Cards</a>
+					<a href='/'>Store List</a>
 				</div>
-			</div>{' '}
-			<button className='flex items-center p-5 space-x-5 rounded-lg m-8 shadow-[0_0_10px_rgba(0,0,0,0.35)]'>
+			</div>
+		
+			<button className='flex w-11/12 lg:w-auto items-center p-5 border-2 border-gray-200 rounded-lg ml-auto m-8 grow-0'>
 				<img src={storefront} alt='storefront' />
-				<h2>Open A Franchise</h2>
+				<h2 className="font-semibold text-2xl p-3">Open A Franchise</h2>
 			</button>
 		</div>
 	)
