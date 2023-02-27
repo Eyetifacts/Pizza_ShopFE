@@ -4,16 +4,20 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import CardCarousel from "../components/CardCarousel";
 import MenuMap from "../components/MenuMap";
+import MobileAppBanner from "../components/MobileAppBanner";
+import PromoCards from "../components/PromoCards";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Header />
       <Hero />
       <CardCarousel />
       <MenuMap />
+      <MobileAppBanner />
+      <PromoCards />
       <Footer />
-    </div>
+    </>
   );
 };
 
