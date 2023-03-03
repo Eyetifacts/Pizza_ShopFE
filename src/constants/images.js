@@ -8,9 +8,10 @@ import party from '../images/party.png';
 import rewards from '../images/rewards.png';
 import mobile1 from '../images/mobile1.png';
 import mobile2 from '../images/mobile2.png';
+import homepageXL from '../images/homepage-fullscreen.png';
+import homepageMD from '../images/homepage-mediumscreen.png';
 
-
-export default {
+const images = {
     pizza,
     logo,
     special,
@@ -20,5 +21,9 @@ export default {
     party,
     rewards,
     mobile1,
-    mobile2
+    mobile2,
+    homepageXL,
+    homepageMD
 };
+
+export default images;
