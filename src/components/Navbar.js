@@ -1,6 +1,5 @@
 import React from "react";
 import { HiShoppingCart } from 'react-icons/hi';
-import { GoChevronDown } from "react-icons/go";
 
 const Navbar = () => {
   return (
