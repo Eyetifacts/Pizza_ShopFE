@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const FooterLegal = () => {
 	return (
@@ -8,8 +9,7 @@ const FooterLegal = () => {
 					className='p-3 rounded-md'
 					name='regions'
 					id='region-select'
-					aria-label='Select Region'
-				>
+					aria-label='Select Region'>
 					<option value=''>International Sites</option>
 					<option value='northAmerica' aria-label='North America'>
 						North America
@@ -30,10 +30,18 @@ const FooterLegal = () => {
 					<a href='/'>Pizza Deals & Specials</a>
 				</div>
 				<div className='social-icons flex space-x-3'>
-					<div>social</div>
-					<div>social</div>
-					<div>social</div>
-					<div>social</div>
+					<div>
+						<FaFacebookF />
+					</div>
+					<div>
+						<FaInstagram />
+					</div>
+					<div>
+						<FaTwitter />
+					</div>
+					<div>
+						<FaYoutube />
+					</div>
 				</div>
 			</div>
 			<div className='space-y-4 text-sm'>
