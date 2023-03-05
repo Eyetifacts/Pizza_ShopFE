@@ -217,9 +217,9 @@ const infoMap = [
   {
     title: "Our Company",
     franchise: {
-        imageUrl: "franchise.png",
-        title: "OPEN A FRANCHISE",
-    }
+      imageUrl: "franchise.png",
+      title: "OPEN A FRANCHISE",
+    },
     linkList: [
       {
         linkUrl: "linkUrl1.png",
