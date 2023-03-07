@@ -1133,6 +1133,24 @@ const menuState = [
               text: "Details",
               detailsUrl: "details1Url",
             },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
             buttonGroup: [
               {
                 buttonStyle: "dark",
@@ -1161,6 +1179,24 @@ const menuState = [
               text: "Details",
               detailsUrl: "details1Url",
             },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
             buttonGroup: [
               {
                 buttonStyle: "dark",
@@ -1188,6 +1224,24 @@ const menuState = [
             details: {
               text: "Details",
               detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
             },
             buttonGroup: [
               {
@@ -1813,7 +1867,7 @@ const menuState = [
                 value: null,
               },
               quantity: {
-                isDisplayed: falsa,
+                isDisplayed: false,
                 value: null,
               },
               type: {
@@ -1853,7 +1907,7 @@ const menuState = [
                 value: null,
               },
               quantity: {
-                isDisplayed: falsa,
+                isDisplayed: false,
                 value: null,
               },
               type: {
@@ -1893,7 +1947,7 @@ const menuState = [
                 value: null,
               },
               quantity: {
-                isDisplayed: falsa,
+                isDisplayed: false,
                 value: null,
               },
               type: {
@@ -1951,6 +2005,454 @@ const menuState = [
                 buttonStyle: "dark",
                 buttonText: "CUSTOMIZE",
                 buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "wingsMenu",
+    menuSections: [
+      {
+        title: "PAPA WINGS",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Unsauced Roasted Wings",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 12.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "810 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "8 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Normal Bake",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Hot Lemon Pepper Wings",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card1Ur2.png",
+            },
+            price: 12.0,
+            interestFlag: { isDisplayed: true, text: "NEW FLAVOR" },
+            description: "960 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "8 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Normal Bake",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Garlic Parmesan Wings",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card1Ur3.png",
+            },
+            price: 12.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "1,040 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "8 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Normal Bake",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Buffalo Wings",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card1Ur4.png",
+            },
+            price: 12.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "840 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "8 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Normal Bake",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "BBQ Wings",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card1Ur5.png",
+            },
+            price: 12.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "880 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "8 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Normal Bake",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Honey Chipotle Wings",
+            imgae: {
+              imageName: "card6",
+              imageUrl: "card1Ur6.png",
+            },
+            price: 12.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "900 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "8 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Normal Bake",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "PAPA POPPERS",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Chicken Poppers",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 9.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "530 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "10 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Hot Lemon Pepper Chicken Poppers",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 9.5,
+            interestFlag: { isDisplayed: true, text: "NEW FLAVOR" },
+            description: "690 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "10 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Buffalo Chicken Poppers",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3UrL.png",
+            },
+            price: 9.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "590 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "10 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Buffalo Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "BBQ Chicken Poppers",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card4UrL.png",
+            },
+            price: 9.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "590 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "10 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Barbeque Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Honey Chipotle Chicken Poppers",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card5UrL.png",
+            },
+            price: 9.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "650 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "10 Piece",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Special Garlic Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
               },
             ],
           },
