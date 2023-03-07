@@ -1784,4 +1784,178 @@ const menuState = [
       },
     ],
   },
+  {
+    title: "papaBitesMenu",
+    menuSections: [
+      {
+        title: "PAPA BITES",
+        description:
+          "Eight tasty pop-able morsels can be enjoyed in three exciting NEW flavors:",
+        type: "advertRowCard",
+        adverRowCards: [
+          {
+            type: "advertRowCard",
+            imgae: {
+              imageName: "advert1",
+              imageUrl: "advert1Url.png",
+            },
+            title: "OREO® COOKIE PAPA BITES",
+            price: 6.29,
+            interestFlag: { isDisplayed: true, text: null },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: falsa,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Cream Cheese Icing",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "light",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            type: "advertRowCard",
+            imgae: {
+              imageName: "advert2",
+              imageUrl: "advert1Ur2.png",
+            },
+            title: "CHICKEN PARMESAN PAPA BITES",
+            price: 6.29,
+            interestFlag: { isDisplayed: true, text: "NEW" },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: falsa,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "light",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            type: "advertRowCard",
+            imgae: {
+              imageName: "advert2",
+              imageUrl: "advert1Ur2.png",
+            },
+            title: "JALAPEÑO PAPA BITES",
+            price: 6.29,
+            interestFlag: { isDisplayed: true, text: "NEW RECIPE" },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: falsa,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "light",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+        productCards: [
+          {
+            title: "Create Your Own Papa Bowl",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 8.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: nul,
+            details: {
+              text: null,
+              detailsUrl: null,
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
