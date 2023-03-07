@@ -1,3 +1,10 @@
+// menuState
+// pizzaMenu
+// pizzaMenuSections
+// papaBowlsMenu
+// papaBowlMenuSections
+// ...
+
 const menuState = {
   menuSections: [
     {
@@ -162,19 +169,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -206,19 +213,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -250,19 +257,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -375,19 +382,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -419,19 +426,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -463,19 +470,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -507,19 +514,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -551,19 +558,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -595,19 +602,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -639,19 +646,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -683,19 +690,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -727,19 +734,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -780,19 +787,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -824,19 +831,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -868,19 +875,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -912,19 +919,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -965,19 +972,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: false,
-                defaultValue: null,
+                value: null,
               },
               quantity: {
                 isDisplayed: false,
-                defaultValue: null,
+                value: null,
               },
               type: {
                 isDisplayed: false,
-                defaultValue: null,
+                value: null,
               },
               flavor: {
                 isDisplayed: false,
-                defaultValue: null,
+                value: null,
               },
             },
             buttonGroup: [
@@ -1013,19 +1020,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
@@ -1057,19 +1064,19 @@ const menuState = {
             productCardForm: {
               size: {
                 isDisplayed: true,
-                defaultValue: "Large",
+                value: "Large",
               },
               quantity: {
                 isDisplayed: true,
-                defaultValue: 1,
+                value: 1,
               },
               type: {
                 isDisplayed: true,
-                defaultValue: "Original Crust",
+                value: "Original Crust",
               },
               flavor: {
                 isDisplayed: true,
-                defaultValue: "Add Crust Flavor",
+                value: "Add Crust Flavor",
               },
             },
             buttonGroup: [
