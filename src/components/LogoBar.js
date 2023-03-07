@@ -1,19 +1,45 @@
-import React, { useState } from "react"
-import { images } from "../constants"
-import { BsGlobe } from "react-icons/bs"
-import { GoChevronDown } from "react-icons/go"
-import { GiHamburgerMenu } from "react-icons/gi"
+import React, { useState } from "react";
+import { images } from "../constants";
+import { BsGlobe } from "react-icons/bs";
+import { GoChevronDown } from "react-icons/go";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 
 const LogoBar = () => {
-	const [toggle, setToggle] = useState(false)
+	const [toggle, setToggle] = useState(false);
 	const toggleSidebar = () => {
 		setToggle(!toggle)
-	}
+	};
+
+	const [ isHover, setIsHover ] = useState(false);
+
+	const handleMouseEnter = () => {
+		setIsHover(true);
+ 	};
+
+ 	const handleMouseLeave = () => {
+		setIsHover(false);
+ 	};
+
+	let hoverStyle = {
+    backgroundColor: isHover ? "yellow" : undefined
+  };
 
 	return (
 		<>
 			<div className="h-16 flex flex-row items-center gap-3 text-lg px-3 border-b border-b-gray">
-				<img width="150px" src={images.logo} alt="delicious pizza" />
+				<NavLink 
+					to="/"
+					style={hoverStyle}
+					onMouseEnter={handleMouseEnter}
+					onMouseLeave={handleMouseLeave}
+				>
+					<img 
+						width="150px" 
+						src={images.logo} 
+						alt="Papa Thomas logo" 
+					/>
+				</NavLink>
 				<div className="flex flex-row font-semibold gap-3 justify-end ml-auto items-center">
 					<div>START YOUR ORDER</div>
 					<button className="hidden lg:flex flex-row gap-2 align-center hover:bg-gray p-3 rounded-lg items-center">
@@ -75,7 +101,7 @@ const LogoBar = () => {
 				</div>
 			)}
 		</>
-	)
+	);
 }
 
-export default LogoBar
+export default LogoBar;
