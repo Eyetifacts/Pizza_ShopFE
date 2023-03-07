@@ -2460,4 +2460,449 @@ const menuState = [
       },
     ],
   },
+  {
+    title: "sidesMenu",
+    menuSections: [
+      {
+        title: "PAPA STARTERS",
+        description: null,
+        type: "advertRowCard, productCard",
+        adverRowCards: [
+          {
+            type: "advertRowCard",
+            imgae: {
+              imageName: "advert1",
+              imageUrl: "advert1Url.png",
+            },
+            title: "CHICKEN PARMESAN PAPA BITES",
+            price: 6.29,
+            interestFlag: { isDisplayed: true, text: "NEW" },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "light",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            type: "advertRowCard",
+            imgae: {
+              imageName: "advert2",
+              imageUrl: "advert2Url.png",
+            },
+            title: "JALAPEÑO PAPA BITES",
+            price: 6.29,
+            interestFlag: { isDisplayed: true, text: "NEW RECIPE" },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "light",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+        productCards: [
+          {
+            title: "Pepperoni Rolls",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: true, text: "NEW!" },
+            description: nul,
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Pepperoni Rolls",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Garlic Knots",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 7.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "110 cal /knot, 8 knots",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Garlic Knots",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Original Breadsticks",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3Url.png",
+            },
+            price: 7.29,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "150 cal /stick, 10 sticks",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Original Breadsticks",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Garlic Parmesan Breadsticks",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card4Url.png",
+            },
+            price: 7.59,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "170 cal /stick, 10 sticks",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Garlic Parmesan Breadsticks",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Cheesesticks",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card5Url.png",
+            },
+            price: 7.99,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "90 cal /stick, 14 sticks",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cheesesticks 10inch",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Bacon Cheesesticks",
+            imgae: {
+              imageName: "card6",
+              imageUrl: "card6Url.png",
+            },
+            price: 7.99,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "110 cal /stick, 14 stick",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cheesesticks 10inch",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Tuscan 6-Cheese Cheesestick",
+            imgae: {
+              imageName: "card7",
+              imageUrl: "card7Url.png",
+            },
+            price: 8.99,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "110 cal /stick, 14 sticks",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Six Cheese Cheesesticks 10",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Jalapeño Cheesesticks",
+            imgae: {
+              imageName: "card8",
+              imageUrl: "card8Url.png",
+            },
+            price: 11.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "110 cal /stick, 16 sticks",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cheesesticks 12inch",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Jalapeño Bacon",
+            imgae: {
+              imageName: "card8",
+              imageUrl: "card8Url.png",
+            },
+            price: 11.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: " 130 cal /stick, 16 sticks",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cheesesticks 12inch",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
