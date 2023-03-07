@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Pizza_ShopFE/static/css/main.1c3cbc21.css",
+    "main.js": "/Pizza_ShopFE/static/js/main.18718811.js",
+    "static/media/pizzaHeroVideo.mp4": "/Pizza_ShopFE/static/media/pizzaHeroVideo.c11539e8ef40597c4e55.mp4",
+    "static/media/homepage-fullscreen.png": "/Pizza_ShopFE/static/media/homepage-fullscreen.949ffe34a8e2e914a7e1.png",
+    "static/media/homepage-mediumscreen.png": "/Pizza_ShopFE/static/media/homepage-mediumscreen.46206b152d27bc7c306c.png",
+    "static/media/specialty-pizza.png": "/Pizza_ShopFE/static/media/specialty-pizza.ecb60922541985c08103.png",
+    "static/media/sides.png": "/Pizza_ShopFE/static/media/sides.9a3ee5fbba9c6780641b.png",
+    "static/media/party.png": "/Pizza_ShopFE/static/media/party.1e7a6ed1b7f628dfc2b8.png",
+    "static/media/full-menu.png": "/Pizza_ShopFE/static/media/full-menu.90b72a75599634692e0b.png",
+    "static/media/rewards.png": "/Pizza_ShopFE/static/media/rewards.efb768c8730fa274f592.png",
+    "static/media/create-your-own.png": "/Pizza_ShopFE/static/media/create-your-own.d57671213320a1ff0487.png",
+    "static/media/mobile2.png": "/Pizza_ShopFE/static/media/mobile2.b155439581643f59f04b.png",
+    "static/media/specials1.webp": "/Pizza_ShopFE/static/media/specials1.edf699f4772031afbc3b.webp",
+    "static/media/mobile1.png": "/Pizza_ShopFE/static/media/mobile1.aacc86f3913634d3a949.png",
+    "static/media/normal-bake.png": "/Pizza_ShopFE/static/media/normal-bake.86bc03821eeff3cdadfd.png",
+    "static/media/papa-thomas.png": "/Pizza_ShopFE/static/media/papa-thomas.e0788070cc4e5c2385cc.png",
+    "static/media/storefront.webp": "/Pizza_ShopFE/static/media/storefront.8bd18a8469b0550aba39.webp",
+    "index.html": "/Pizza_ShopFE/index.html",
+    "main.1c3cbc21.css.map": "/Pizza_ShopFE/static/css/main.1c3cbc21.css.map",
+    "main.18718811.js.map": "/Pizza_ShopFE/static/js/main.18718811.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c3cbc21.css",
+    "static/js/main.18718811.js"
+  ]
+}
