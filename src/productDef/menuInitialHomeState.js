@@ -1247,4 +1247,541 @@ const menuState = [
       },
     ],
   },
+  {
+    title: "papadiasMenu",
+    menuSections: [
+      {
+        title: "PARMESAN CRUSTED PAPADIAS",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Parmesan Crusted Create Your Own Papadia",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 8.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: nul,
+            details: {
+              text: null,
+              detailsUrl: null,
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Parmesan Crusted Philly Cheesesteak Papadia",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card1Ur2.png",
+            },
+            price: 8.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "930 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Special Garlic Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Parmesan Crusted BBQ Chicken & Bacon Papadia",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card1Ur3.png",
+            },
+            price: 8.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "960 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Barbeque Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Parmesan Crusted Grilled Buffalo Chicken Papadia",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card1Ur4.png",
+            },
+            price: 8.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "1,050 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Parmesan Crusted Meatball Pepperoni Papadia",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card1Ur5.png",
+            },
+            price: 8.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "1,060 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Parmesan Crusted Italian Papadia",
+            imgae: {
+              imageName: "card6",
+              imageUrl: "card1Ur6.png",
+            },
+            price: 8.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "1,070 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "PAPADIAS",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Create Your Own Papadia",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: nul,
+            details: {
+              text: null,
+              detailsUrl: null,
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Philly Cheesesteak Papadia",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card1Ur2.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "800 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Special Garlic Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "BBQ Chicken & Bacon Papadia",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card1Ur3.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "830 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Barbeque Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Grilled Buffalo Chicken Papadia",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card1Ur4.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "910 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: false,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Ranch Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Meatball Pepperoni Papadia",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card1Ur5.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "990 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Italian Papadia",
+            imgae: {
+              imageName: "card6",
+              imageUrl: "card1Ur6.png",
+            },
+            price: 7.0,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "940 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Crusted Papadia",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
