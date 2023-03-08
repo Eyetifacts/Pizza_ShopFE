@@ -3322,4 +3322,732 @@ const menuState = [
       },
     ],
   },
+  {
+    title: "extrasMenu",
+    menuSections: [
+      {
+        title: "DIPPING SAUCES",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Special Garlic Sauce",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "150 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Special Garlic Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Spicy Garlic Sauce",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 3.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "153 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Spicy Garlic Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Pizza Sauce",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "20 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "2-Liter",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Ranch Sauce",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card4Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "100 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Ranch Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Blue Cheese Sauce",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card5Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "160 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Blue Cheese Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Honey Mustard Sauce",
+            imgae: {
+              imageName: "card6",
+              imageUrl: "card6Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "150 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Honey Mustard Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Buffalo Spicy Sauce",
+            imgae: {
+              imageName: "card7",
+              imageUrl: "card7Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "15 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Buffalo Spicy Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Barbeque Sauce",
+            imgae: {
+              imageName: "card8",
+              imageUrl: "card8Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "45 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Barbeque Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Garlic Parmesan Sauce",
+            imgae: {
+              imageName: "card9",
+              imageUrl: "card9Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "220 cal/cup",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Garlic Parm Cup",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Cheese Sauce",
+            imgae: {
+              imageName: "card10",
+              imageUrl: "card10Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "40 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cheese Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Cream Cheese Icing",
+            imgae: {
+              imageName: "card11",
+              imageUrl: "card11Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "150 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cream Cheese Icing Dipping Sauce",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "SEASONING PACKETS",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Special Seasonings",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 0.3,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "5 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Seasoning Shaker",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Crushed Red Pepper",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 0.3,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "5 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Crushed Red Pepper Shaker",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Parmesan Cheese",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3Url.png",
+            },
+            price: 0.3,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "15 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Parmesan Cheese Shaker",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "EXTRAS",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Pepperoncinis",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Pepperoncinis Peppers",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Jalapeño Peppers",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "5 cal /each",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Jalapeno Peppers",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Banana Peppers",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3Url.png",
+            },
+            price: 0.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "5 cal /each",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Banana Peppers",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Anchovies",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card4Url.png",
+            },
+            price: 1.75,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "30 cal /each",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Anchovies",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
