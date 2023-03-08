@@ -2905,4 +2905,175 @@ const menuState = [
       },
     ],
   },
+  {
+    title: "dessertsMenu",
+    menuSections: [
+      {
+        title: "DESSERTS",
+        description: null,
+        type: "advertRowCard, productCard",
+        adverRowCards: [
+          {
+            type: "advertRowCard",
+            imgae: {
+              imageName: "advert1",
+              imageUrl: "advert1Url.png",
+            },
+            title: "OREO® COOKIE PAPA BITES",
+            price: 6.29,
+            interestFlag: { isDisplayed: true, text: "NEW" },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: false,
+                value: null,
+              },
+              quantity: {
+                isDisplayed: false,
+                value: null,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Cream Cheese Icing",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "light",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+        productCards: [
+          {
+            title: "Cinnamon Pull Aparts",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 7.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "1,960 cal",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Cinnamon Pull Apart",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Chocolate Chip Cookie",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 7.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "190 cal /slice, 8 slices",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Choclate Chip Cookie",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Double Choclate Chip Brownie",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3Url.png",
+            },
+            price: 7.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "240 cal /square, 9 squares",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Double Choclate Chip Brownie",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Pizza Sauce",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
