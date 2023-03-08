@@ -3076,4 +3076,250 @@ const menuState = [
       },
     ],
   },
+  {
+    title: "drinksMenu",
+    menuSections: [
+      {
+        title: "ICE COLD PEPSI BEVERAGES",
+        description: null,
+        type: "productCard",
+        productCards: [
+          {
+            title: "Pepsi",
+            imgae: {
+              imageName: "card1",
+              imageUrl: "card1Url.png",
+            },
+            price: 3.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "150 cal /12 oz",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "2-Liter",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Mountain Dew",
+            imgae: {
+              imageName: "card2",
+              imageUrl: "card2Url.png",
+            },
+            price: 3.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "170 cal /12 oz",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Mountain Dew",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Diet Pepsi",
+            imgae: {
+              imageName: "card3",
+              imageUrl: "card3Url.png",
+            },
+            price: 3.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "2-Liter",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Aquafina",
+            imgae: {
+              imageName: "card4",
+              imageUrl: "card4Url.png",
+            },
+            price: 2.39,
+            interestFlag: { isDisplayed: false, text: null },
+            description: null,
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Aquafina",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Starry",
+            imgae: {
+              imageName: "card5",
+              imageUrl: "card5Url.png",
+            },
+            price: 3.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "150 cal /12 oz",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "2-Liter",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+          {
+            title: "Starry",
+            imgae: {
+              imageName: "card6",
+              imageUrl: "card6Url.png",
+            },
+            price: 3.49,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "195 cal /12 oz",
+            details: {
+              text: "Details",
+              detailsUrl: "detailsUrl",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Orange Crush",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: false,
+                value: null,
+              },
+              flavor: {
+                isDisplayed: false,
+                value: null,
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
