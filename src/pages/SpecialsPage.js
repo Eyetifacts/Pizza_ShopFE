@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import SpecialsCard from "../components/SpecialsCard"
+import SpecialsCard from "../components/specialsPage/SpecialsCard"
 import specials1 from "../images/specials/specials1.webp"
 
 const SPECIALS = [

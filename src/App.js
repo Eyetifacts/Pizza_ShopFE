@@ -4,8 +4,8 @@ import React from "react";
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 import HomePage from "./pages/HomePage";
 import MenuPage from "./pages/MenuPage";
