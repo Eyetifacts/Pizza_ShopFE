@@ -1,175 +1,1430 @@
-const order = {
-  productType: "",
-  productName: "Custom Pizza",
-  orderId: "oi1",
-  orderInfo: {
-    base: {
-      size: { pizzaSize: "Large", priceAlteration: 2.0 },
-      crust: { type: "Original", priceAlteration: 0.0 },
-      crustFlavor: { flavor: "None", priceAlteration: 0.0 },
-      sauce: {
-        flavor: { flavor: "Original", priceAlteration: 0.0 },
-        amount: { sauceAmount: "Normal", priceAlteration: 0.0 },
-      },
-      cut: { cutType: "Normal", priceAlteration: 0.0 },
-      bake: { bakeType: "Normal", priceAlteration: 0.0 },
-    },
-    cheese: {
-      quantity: {
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      cheeseAdditions: {
-        extraCheese: {
-          selected: false,
-          priceAlteration: 0.0,
+// Product
+// options
+// crust, cheese, meat, vegtables, size, sauce
+// crust type dicates allowable pizza sizes
+// NY Style:  X-Large
+// Gluten Free: Small
+// Epic Stuffed:  Large
+// Crispy Parm:  Large
+
+const menuType = {
+  product: "pizza",
+  buildFlows: [
+    {
+      flowName: "baseFlow",
+      optionSelections: [
+        {
+          options: [
+            {
+              optionName: "crustType",
+              optionRule: {
+                ruleName: "conditionSelect",
+                selectionIsMandatory: true,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: [
+                        "OriginalCrust",
+                        "Crispy Parm Crust",
+                        "Epic Stuffed Crust",
+                        "Epic Pepperoni-Stuffed Crust",
+                        "NY Style Crust",
+                        "Thin Crust",
+                        "Gluten-Free Crust",
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+          buildFlows: [
+            {
+              flowName: "sizeFlow",
+              optionSelections: [
+                {
+                  options: [
+                    {
+                      optionName: "pizzaSize",
+                      optionRule: {
+                        ruleName: "conditionSelect",
+                        isMandatory: true,
+                        optionSelections: [
+                          {
+                            inputType: "crustType",
+                            condition: ["Original Crust"],
+                            actionType: "selectList",
+                            result: {
+                              resultType: "selectList",
+                              result: [
+                                "Small",
+                                "Medium",
+                                "Large",
+                                "Extra Large",
+                              ],
+                            },
+                          },
+                          {
+                            inputType: "crustType",
+                            crustType: [
+                              "Crispy Parm Crust",
+                              "Epic Stuffed Crust",
+                              "Epic Pepperoni-Stuffed Crust",
+                              "NY Style Crust",
+                              "Thin Crust",
+                            ],
+                            actionType: "selectList",
+                            result: {
+                              resultType: "selectList",
+                              result: ["Large"],
+                            },
+                          },
+                          {
+                            inputType: "crustType",
+                            crustType: ["Gluten-Free Crust"],
+                            actionType: "selectList",
+                            result: {
+                              resultType: "selectList",
+                              result: ["Small"],
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
-        threeCheese: {
-          selected: true,
-          priceAlteration: 1.0,
+        {
+          options: [
+            {
+              optionName: "crustFlavor",
+              optionRule: {
+                ruleName: "conditionSelect",
+                selectionIsMandatory: true,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: ["None", "Garlic Parmesan Cheese"],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
         },
-        parmesanRomano: {
-          selected: false,
-          priceAlteration: 0.0,
+        {
+          options: [
+            {
+              optionName: "sauceFlavor",
+              optionRule: {
+                ruleName: "conditionSelect",
+                selectionIsMandatory: true,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: [
+                        "None",
+                        "Barbecue",
+                        "Ranch",
+                        "Original",
+                        "Garlic",
+                        "Buffalo",
+                        "Alfredo Sauce",
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+          buildFlow: [
+            {
+              flowName: "sauceAmountFlow",
+              optionSelections: [
+                {
+                  options: [
+                    {
+                      optionName: "sauceAmount",
+                      optionRule: {
+                        ruleName: "conditionSelect",
+                        isMandatory: true,
+                        optionSelections: [
+                          {
+                            inputType: "sauceFlavor",
+                            condition: [
+                              "Barbecue",
+                              "Ranch",
+                              "Original",
+                              "Garlic",
+                              "Buffalo",
+                              "Alfredo Sauce",
+                            ],
+                            actionType: "selectList",
+                            result: {
+                              resultType: "selectList",
+                              result: ["Normal", "Light", "Extra"],
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
-      },
+        {
+          options: [
+            {
+              optionName: "cutType",
+              optionRule: {
+                ruleName: "conditionSelect",
+                selectionIsMandatory: true,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: [
+                        "Normal Cut",
+                        "Square Cut",
+                        "Clean Cut",
+                        "No Cut",
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        {
+          options: [
+            {
+              optionName: "bakeType",
+              optionRule: {
+                ruleName: "conditionSelect",
+                selectionIsMandatory: true,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: ["Normal Bake", "Well Done"],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      ],
     },
-    meats: {
-      spicyItalianSausage: {
-        selected: true,
-        whole: true,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 2.0,
-      },
-      phillySteak: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      salami: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      grilledChicken: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      canadianBacon: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      beef: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      pepperoni: {
-        selected: true,
-        whole: true,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 2.0,
-      },
-      sausage: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      meatball: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      anchovies: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
+    {
+      flowName: "cheeseFlow",
+      optionSelections: [
+        {
+          options: [
+            {
+              optionName: "cheeseAmount",
+              optionRule: {
+                ruleName: "conditionSelect",
+                selectionIsMandatory: true,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: ["Normal Cheese", "Light Cheese", "No Cheese"],
+                    },
+                  },
+                ],
+              },
+            },
+            {
+              optionName: "additionalCheeseToppings",
+              optionRule: {
+                ruleName: "multipleSelect",
+                selectionIsMandatory: false,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: [
+                        "Parmesan Romano",
+                        "Extra Cheese",
+                        "3-Cheese Blend",
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      ],
     },
-    veggies: {
-      greenPeppers: {
-        selected: true,
-        whole: true,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 1.0,
-      },
-      romaTomatoes: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      blackOlives: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      pineapple: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      onions: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      freshSpinach: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      bananaPeppers: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      mushrooms: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
-      jalapenoPeppers: {
-        selected: false,
-        whole: false,
-        halves: { firstHalf: false, seconhalf: false },
-        amount: "Normal",
-        priceAlteration: 0.0,
-      },
+    {
+      flowName: "meatFlow",
+      optionSelections: [
+        {
+          options: [
+            {
+              optionName: "meatToppings",
+              optionRule: {
+                ruleName: "multipleSelect",
+                selectionIsMandatory: false,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: [
+                        {
+                          name: "Canadian Bacon",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Sausage",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Philly Steak",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Bacon",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Salami",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Beef",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Meatball",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Grilled Chicken",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Pepperoni",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Anchovies",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Spicy Italian Sausage",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      ],
     },
-  },
+
+    {
+      flowName: "veggieFlow",
+      optionSelections: [
+        {
+          options: [
+            {
+              optionName: "veggieToppings",
+              optionRule: {
+                ruleName: "multipleSelect",
+                selectionIsMandatory: false,
+                optionSelections: [
+                  {
+                    inputType: null,
+                    condition: [],
+                    actionType: "getSelectList",
+                    result: {
+                      resultType: "selectList",
+                      result: [
+                        {
+                          name: "Onions",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Black Olives",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Fresh Spinach",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Mushrooms",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Roma Tomatoes",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Banana Peppers",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Jalapeño Peppers",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Pineapple",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                        {
+                          name: "Green Peppers",
+                          buildFlows: [
+                            {
+                              flowName: "pizzaCoverage",
+                              optionSelections: [
+                                {
+                                  options: [
+                                    {
+                                      optionName: "halfOrWhole",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: [
+                                                "Half1",
+                                                "Whole",
+                                                "Half2",
+                                              ],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    {
+                                      optionName: "ingredientAmount",
+                                      optionRule: {
+                                        ruleName: "conditionalSelect",
+                                        selectionIsMandatory: true,
+                                        optionSelections: [
+                                          {
+                                            inputType: null,
+                                            condition: [],
+                                            actionType: "getSelectList",
+                                            result: {
+                                              resultType: "selectList",
+                                              result: ["Normal", "Extra"],
+                                            },
+                                          },
+                                        ],
+                                      },
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
