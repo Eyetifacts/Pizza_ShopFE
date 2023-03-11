@@ -1266,7 +1266,7 @@ const menuState = [
             },
             price: 8.49,
             interestFlag: { isDisplayed: false, text: null },
-            description: nul,
+            description: null,
             details: {
               text: null,
               detailsUrl: null,
@@ -1317,7 +1317,7 @@ const menuState = [
             },
             price: 8.0,
             interestFlag: { isDisplayed: false, text: null },
-            description: nul,
+            description: null,
             details: {
               text: null,
               detailsUrl: null,
@@ -1583,7 +1583,7 @@ const menuState = [
             },
             price: 7.0,
             interestFlag: { isDisplayed: false, text: null },
-            description: nul,
+            description: null,
             details: {
               text: null,
               detailsUrl: null,
@@ -1977,7 +1977,7 @@ const menuState = [
             },
             price: 8.49,
             interestFlag: { isDisplayed: false, text: null },
-            description: nul,
+            description: null,
             details: {
               text: null,
               detailsUrl: null,
@@ -2558,7 +2558,7 @@ const menuState = [
             },
             price: 7.0,
             interestFlag: { isDisplayed: true, text: "NEW!" },
-            description: nul,
+            description: null,
             details: {
               text: "Details",
               detailsUrl: "detailsUrl",
@@ -4051,3 +4051,6 @@ const menuState = [
     ],
   },
 ];
+
+
+export default menuState;

@@ -61,7 +61,7 @@ const CardCarousel = () => {
         {carouselItems.map((item) => (
           <Card item={item} key={item.title} />
         ))}
-        </div>
+      </div>
 
   );
 };
