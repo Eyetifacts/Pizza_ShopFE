@@ -1,9 +1,4 @@
-// menuState
-// pizzaMenu
-// pizzaMenuSections
-// papaBowlsMenu
-// papaBowlMenuSections
-// ...
+import { images } from "../constants";
 
 const menuState = [
   {
@@ -22,7 +17,7 @@ const menuState = [
           carouselCards: [
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name1",
                 imageUrl: "name1Url.png",
               },
@@ -40,7 +35,7 @@ const menuState = [
             },
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name2",
                 imageUrl: "name2Url.png",
               },
@@ -58,7 +53,7 @@ const menuState = [
             },
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name3",
                 imageUrl: "name3Url.png",
               },
@@ -76,7 +71,7 @@ const menuState = [
             },
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name4",
                 imageUrl: "name4Url.png",
               },
@@ -94,7 +89,7 @@ const menuState = [
             },
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name5",
                 imageUrl: "name5Url.png",
               },
@@ -112,7 +107,7 @@ const menuState = [
             },
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name6",
                 imageUrl: "name6Url.png",
               },
@@ -130,7 +125,7 @@ const menuState = [
             },
             {
               type: "menuCarouselCard",
-              imgae: {
+              image: {
                 imageName: "Name7",
                 imageUrl: "name7Url.png",
               },
@@ -157,33 +152,51 @@ const menuState = [
           productCardArray: [
             {
               title: "Pepperoni Pizza",
-              imgae: {
+              id: "11",
+              image: {
                 imageName: "card1",
-                imageUrl: "card1Url.png",
+                imageUrl: images.pizza,
               },
               price: 17.5,
-              interestFlag: { isDisplayed: true, text: "Limited Time" },
+              interestFlag: { isDisplayed: false, text: null },
               description: "320 cal /slice, 8 slices",
               details: {
-                text: "Details",
+                text: "Detail",
                 detailsUrl: "details1Url",
               },
               productCardForm: {
                 size: {
                   isDisplayed: true,
                   value: "Large",
+                  options: ["Small", "Medium", "Large", "Extra Large"],
                 },
                 quantity: {
                   isDisplayed: true,
                   value: 1,
+                  options: [
+                    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+                    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
+                    33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
+                    48, 49, 50,
+                  ],
                 },
                 type: {
                   isDisplayed: true,
                   value: "Original Crust",
+                  options: [
+                    "Original Crust",
+                    "Crispy Parm Crust",
+                    "Epic Stuffed Crust",
+                    "Epic Pepperoni-Stuffed Crust",
+                    "NY Style Crust",
+                    "Thin Crust",
+                    "Gluten-Free Crust",
+                  ],
                 },
                 flavor: {
                   isDisplayed: true,
                   value: "Add Crust Flavor",
+                  options: ["None", "Garlic Parmesan Cheese"],
                 },
               },
               buttonGroup: [
@@ -201,12 +214,13 @@ const menuState = [
             },
             {
               title: "Sausage Pizza",
-              imgae: {
+              id: "12",
+              image: {
                 imageName: "card2",
-                imageUrl: "card2Url.png",
+                imageUrl: images.pizza,
               },
               price: 17.5,
-              interestFlag: { isDisplayed: true, text: "Limited Time" },
+              interestFlag: { isDisplayed: false, text: null },
               description: "330 cal /slice, 8 slices",
               details: {
                 text: "Details",
@@ -245,12 +259,13 @@ const menuState = [
             },
             {
               title: "Cheese Pizza",
-              imgae: {
-                imageName: "card2",
-                imageUrl: "card2Url.png",
+              id: "13",
+              image: {
+                imageName: "card3",
+                imageUrl: images.pizza,
               },
               price: 17.5,
-              interestFlag: { isDisplayed: true, text: "Limited Time" },
+              interestFlag: { isDisplayed: false, text: null },
               description: "270 cal /slice, 8 slices",
               details: {
                 text: "Details",
@@ -295,7 +310,7 @@ const menuState = [
         description: null,
         type: "advertRowCard",
         advertRowCard: {
-          imgae: {
+          image: {
             imageName: "advert1",
             imageUrl: "advert1Url.png",
           },
@@ -332,7 +347,7 @@ const menuState = [
               text: "Details",
               detailsUrl: "details1Url",
             },
-            imgae: {
+            image: {
               imageName: "advert1",
               imageUrl: "advert1Url.png",
             },
@@ -354,7 +369,7 @@ const menuState = [
               text: "Details",
               detailsUrl: "details1Url",
             },
-            imgae: {
+            image: {
               imageName: "advert1",
               imageUrl: "advert1Url.png",
             },
@@ -381,7 +396,7 @@ const menuState = [
           productCardArray: [
             {
               title: "The Works Pizza",
-              imgae: {
+              image: {
                 imageName: "card1",
                 imageUrl: "card1Url.png",
               },
@@ -425,7 +440,7 @@ const menuState = [
             },
             {
               title: "The Meats Pizza",
-              imgae: {
+              image: {
                 imageName: "card2",
                 imageUrl: "card2Url.png",
               },
@@ -469,7 +484,7 @@ const menuState = [
             },
             {
               title: "Zesty Italian Trio Pizza",
-              imgae: {
+              image: {
                 imageName: "card3",
                 imageUrl: "card2Ur3.png",
               },
@@ -513,7 +528,7 @@ const menuState = [
             },
             {
               title: "Super Hawaiian Pizza",
-              imgae: {
+              image: {
                 imageName: "card5",
                 imageUrl: "card2Ur5.png",
               },
@@ -557,7 +572,7 @@ const menuState = [
             },
             {
               title: "Ultimate Pepperoni Pizza",
-              imgae: {
+              image: {
                 imageName: "card6",
                 imageUrl: "card2Ur6.png",
               },
@@ -601,7 +616,7 @@ const menuState = [
             },
             {
               title: "BBQ Chicken Bacon Pizza",
-              imgae: {
+              image: {
                 imageName: "card7",
                 imageUrl: "card2Ur7.png",
               },
@@ -645,7 +660,7 @@ const menuState = [
             },
             {
               title: "Fiery Buffalo Chicken Pizza",
-              imgae: {
+              image: {
                 imageName: "card8",
                 imageUrl: "card2Ur8.png",
               },
@@ -689,7 +704,7 @@ const menuState = [
             },
             {
               title: "Philly Cheesesteak Pizza",
-              imgae: {
+              image: {
                 imageName: "card9",
                 imageUrl: "card2Ur9.png",
               },
@@ -733,7 +748,7 @@ const menuState = [
             },
             {
               title: "Pepperoni, Sausage & Six Cheese Pizza",
-              imgae: {
+              image: {
                 imageName: "card10",
                 imageUrl: "card2Ur10.png",
               },
@@ -786,7 +801,7 @@ const menuState = [
           productCardArray: [
             {
               title: "Extra Cheesy Alfredo Pizza",
-              imgae: {
+              image: {
                 imageName: "card1",
                 imageUrl: "card1Url.png",
               },
@@ -830,7 +845,7 @@ const menuState = [
             },
             {
               title: "Fresh Spinach & Tomato Alfredo Pizza",
-              imgae: {
+              image: {
                 imageName: "card2",
                 imageUrl: "card2Url.png",
               },
@@ -874,7 +889,7 @@ const menuState = [
             },
             {
               title: "Garden Fresh Pizza",
-              imgae: {
+              image: {
                 imageName: "card3",
                 imageUrl: "card2Ur3.png",
               },
@@ -918,7 +933,7 @@ const menuState = [
             },
             {
               title: "Tuscan Six Cheese Pizza",
-              imgae: {
+              image: {
                 imageName: "card3",
                 imageUrl: "card2Ur3.png",
               },
@@ -971,7 +986,7 @@ const menuState = [
           productCardArray: [
             {
               title: "Create Your Own Gluten-Free Crust",
-              imgae: {
+              image: {
                 imageName: "card1",
                 imageUrl: "card1Url.png",
               },
@@ -1019,7 +1034,7 @@ const menuState = [
           productCardArray: [
             {
               title: "Hawaiian BBQ Chicken Pizza",
-              imgae: {
+              image: {
                 imageName: "card1",
                 imageUrl: "card1Url.png",
               },
@@ -1063,7 +1078,7 @@ const menuState = [
             },
             {
               title: "White Garden Pizza",
-              imgae: {
+              image: {
                 imageName: "card2",
                 imageUrl: "card2Url.png",
               },
@@ -1120,7 +1135,7 @@ const menuState = [
         adverRowCards: [
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert1",
               imageUrl: "advert1Url.png",
             },
@@ -1166,7 +1181,7 @@ const menuState = [
           },
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert2",
               imageUrl: "advert2Url.png",
             },
@@ -1212,7 +1227,7 @@ const menuState = [
           },
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert3",
               imageUrl: "advert3Url.png",
             },
@@ -1260,7 +1275,7 @@ const menuState = [
         productCards: [
           {
             title: "Create Your Own Papa Bowl",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -1311,7 +1326,7 @@ const menuState = [
         productCards: [
           {
             title: "Parmesan Crusted Create Your Own Papadia",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -1350,7 +1365,7 @@ const menuState = [
           },
           {
             title: "Parmesan Crusted Philly Cheesesteak Papadia",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card1Ur2.png",
             },
@@ -1394,7 +1409,7 @@ const menuState = [
           },
           {
             title: "Parmesan Crusted BBQ Chicken & Bacon Papadia",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card1Ur3.png",
             },
@@ -1438,7 +1453,7 @@ const menuState = [
           },
           {
             title: "Parmesan Crusted Grilled Buffalo Chicken Papadia",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card1Ur4.png",
             },
@@ -1482,7 +1497,7 @@ const menuState = [
           },
           {
             title: "Parmesan Crusted Meatball Pepperoni Papadia",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card1Ur5.png",
             },
@@ -1526,7 +1541,7 @@ const menuState = [
           },
           {
             title: "Parmesan Crusted Italian Papadia",
-            imgae: {
+            image: {
               imageName: "card6",
               imageUrl: "card1Ur6.png",
             },
@@ -1577,7 +1592,7 @@ const menuState = [
         productCards: [
           {
             title: "Create Your Own Papadia",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -1616,7 +1631,7 @@ const menuState = [
           },
           {
             title: "Philly Cheesesteak Papadia",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card1Ur2.png",
             },
@@ -1660,7 +1675,7 @@ const menuState = [
           },
           {
             title: "BBQ Chicken & Bacon Papadia",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card1Ur3.png",
             },
@@ -1704,7 +1719,7 @@ const menuState = [
           },
           {
             title: "Grilled Buffalo Chicken Papadia",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card1Ur4.png",
             },
@@ -1748,7 +1763,7 @@ const menuState = [
           },
           {
             title: "Meatball Pepperoni Papadia",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card1Ur5.png",
             },
@@ -1792,7 +1807,7 @@ const menuState = [
           },
           {
             title: "Italian Papadia",
-            imgae: {
+            image: {
               imageName: "card6",
               imageUrl: "card1Ur6.png",
             },
@@ -1849,7 +1864,7 @@ const menuState = [
         adverRowCards: [
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert1",
               imageUrl: "advert1Url.png",
             },
@@ -1889,7 +1904,7 @@ const menuState = [
           },
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert2",
               imageUrl: "advert1Ur2.png",
             },
@@ -1929,7 +1944,7 @@ const menuState = [
           },
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert2",
               imageUrl: "advert1Ur2.png",
             },
@@ -1971,7 +1986,7 @@ const menuState = [
         productCards: [
           {
             title: "Create Your Own Papa Bowl",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -2022,7 +2037,7 @@ const menuState = [
         productCards: [
           {
             title: "Unsauced Roasted Wings",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -2061,7 +2076,7 @@ const menuState = [
           },
           {
             title: "Hot Lemon Pepper Wings",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card1Ur2.png",
             },
@@ -2100,7 +2115,7 @@ const menuState = [
           },
           {
             title: "Garlic Parmesan Wings",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card1Ur3.png",
             },
@@ -2139,7 +2154,7 @@ const menuState = [
           },
           {
             title: "Buffalo Wings",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card1Ur4.png",
             },
@@ -2178,7 +2193,7 @@ const menuState = [
           },
           {
             title: "BBQ Wings",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card1Ur5.png",
             },
@@ -2217,7 +2232,7 @@ const menuState = [
           },
           {
             title: "Honey Chipotle Wings",
-            imgae: {
+            image: {
               imageName: "card6",
               imageUrl: "card1Ur6.png",
             },
@@ -2263,7 +2278,7 @@ const menuState = [
         productCards: [
           {
             title: "Chicken Poppers",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -2302,7 +2317,7 @@ const menuState = [
           },
           {
             title: "Hot Lemon Pepper Chicken Poppers",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -2341,7 +2356,7 @@ const menuState = [
           },
           {
             title: "Buffalo Chicken Poppers",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3UrL.png",
             },
@@ -2380,7 +2395,7 @@ const menuState = [
           },
           {
             title: "BBQ Chicken Poppers",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card4UrL.png",
             },
@@ -2419,7 +2434,7 @@ const menuState = [
           },
           {
             title: "Honey Chipotle Chicken Poppers",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card5UrL.png",
             },
@@ -2470,7 +2485,7 @@ const menuState = [
         adverRowCards: [
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert1",
               imageUrl: "advert1Url.png",
             },
@@ -2510,7 +2525,7 @@ const menuState = [
           },
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert2",
               imageUrl: "advert2Url.png",
             },
@@ -2552,7 +2567,7 @@ const menuState = [
         productCards: [
           {
             title: "Pepperoni Rolls",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -2591,7 +2606,7 @@ const menuState = [
           },
           {
             title: "Garlic Knots",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -2630,7 +2645,7 @@ const menuState = [
           },
           {
             title: "Original Breadsticks",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3Url.png",
             },
@@ -2669,7 +2684,7 @@ const menuState = [
           },
           {
             title: "Garlic Parmesan Breadsticks",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card4Url.png",
             },
@@ -2708,7 +2723,7 @@ const menuState = [
           },
           {
             title: "Cheesesticks",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card5Url.png",
             },
@@ -2747,7 +2762,7 @@ const menuState = [
           },
           {
             title: "Bacon Cheesesticks",
-            imgae: {
+            image: {
               imageName: "card6",
               imageUrl: "card6Url.png",
             },
@@ -2786,7 +2801,7 @@ const menuState = [
           },
           {
             title: "Tuscan 6-Cheese Cheesestick",
-            imgae: {
+            image: {
               imageName: "card7",
               imageUrl: "card7Url.png",
             },
@@ -2825,7 +2840,7 @@ const menuState = [
           },
           {
             title: "Jalapeño Cheesesticks",
-            imgae: {
+            image: {
               imageName: "card8",
               imageUrl: "card8Url.png",
             },
@@ -2864,7 +2879,7 @@ const menuState = [
           },
           {
             title: "Jalapeño Bacon",
-            imgae: {
+            image: {
               imageName: "card8",
               imageUrl: "card8Url.png",
             },
@@ -2915,7 +2930,7 @@ const menuState = [
         adverRowCards: [
           {
             type: "advertRowCard",
-            imgae: {
+            image: {
               imageName: "advert1",
               imageUrl: "advert1Url.png",
             },
@@ -2957,7 +2972,7 @@ const menuState = [
         productCards: [
           {
             title: "Cinnamon Pull Aparts",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -2996,7 +3011,7 @@ const menuState = [
           },
           {
             title: "Chocolate Chip Cookie",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -3035,7 +3050,7 @@ const menuState = [
           },
           {
             title: "Double Choclate Chip Brownie",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3Url.png",
             },
@@ -3086,7 +3101,7 @@ const menuState = [
         productCards: [
           {
             title: "Pepsi",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -3125,7 +3140,7 @@ const menuState = [
           },
           {
             title: "Mountain Dew",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -3164,7 +3179,7 @@ const menuState = [
           },
           {
             title: "Diet Pepsi",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3Url.png",
             },
@@ -3203,7 +3218,7 @@ const menuState = [
           },
           {
             title: "Aquafina",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card4Url.png",
             },
@@ -3242,7 +3257,7 @@ const menuState = [
           },
           {
             title: "Starry",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card5Url.png",
             },
@@ -3281,7 +3296,7 @@ const menuState = [
           },
           {
             title: "Starry",
-            imgae: {
+            image: {
               imageName: "card6",
               imageUrl: "card6Url.png",
             },
@@ -3332,7 +3347,7 @@ const menuState = [
         productCards: [
           {
             title: "Special Garlic Sauce",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -3371,7 +3386,7 @@ const menuState = [
           },
           {
             title: "Spicy Garlic Sauce",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -3410,7 +3425,7 @@ const menuState = [
           },
           {
             title: "Pizza Sauce",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3Url.png",
             },
@@ -3449,7 +3464,7 @@ const menuState = [
           },
           {
             title: "Ranch Sauce",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card4Url.png",
             },
@@ -3488,7 +3503,7 @@ const menuState = [
           },
           {
             title: "Blue Cheese Sauce",
-            imgae: {
+            image: {
               imageName: "card5",
               imageUrl: "card5Url.png",
             },
@@ -3527,7 +3542,7 @@ const menuState = [
           },
           {
             title: "Honey Mustard Sauce",
-            imgae: {
+            image: {
               imageName: "card6",
               imageUrl: "card6Url.png",
             },
@@ -3566,7 +3581,7 @@ const menuState = [
           },
           {
             title: "Buffalo Spicy Sauce",
-            imgae: {
+            image: {
               imageName: "card7",
               imageUrl: "card7Url.png",
             },
@@ -3605,7 +3620,7 @@ const menuState = [
           },
           {
             title: "Barbeque Sauce",
-            imgae: {
+            image: {
               imageName: "card8",
               imageUrl: "card8Url.png",
             },
@@ -3644,7 +3659,7 @@ const menuState = [
           },
           {
             title: "Garlic Parmesan Sauce",
-            imgae: {
+            image: {
               imageName: "card9",
               imageUrl: "card9Url.png",
             },
@@ -3683,7 +3698,7 @@ const menuState = [
           },
           {
             title: "Cheese Sauce",
-            imgae: {
+            image: {
               imageName: "card10",
               imageUrl: "card10Url.png",
             },
@@ -3722,7 +3737,7 @@ const menuState = [
           },
           {
             title: "Cream Cheese Icing",
-            imgae: {
+            image: {
               imageName: "card11",
               imageUrl: "card11Url.png",
             },
@@ -3768,7 +3783,7 @@ const menuState = [
         productCards: [
           {
             title: "Special Seasonings",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -3807,7 +3822,7 @@ const menuState = [
           },
           {
             title: "Crushed Red Pepper",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -3846,7 +3861,7 @@ const menuState = [
           },
           {
             title: "Parmesan Cheese",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3Url.png",
             },
@@ -3892,7 +3907,7 @@ const menuState = [
         productCards: [
           {
             title: "Pepperoncinis",
-            imgae: {
+            image: {
               imageName: "card1",
               imageUrl: "card1Url.png",
             },
@@ -3931,7 +3946,7 @@ const menuState = [
           },
           {
             title: "Jalapeño Peppers",
-            imgae: {
+            image: {
               imageName: "card2",
               imageUrl: "card2Url.png",
             },
@@ -3970,7 +3985,7 @@ const menuState = [
           },
           {
             title: "Banana Peppers",
-            imgae: {
+            image: {
               imageName: "card3",
               imageUrl: "card3Url.png",
             },
@@ -4009,7 +4024,7 @@ const menuState = [
           },
           {
             title: "Anchovies",
-            imgae: {
+            image: {
               imageName: "card4",
               imageUrl: "card4Url.png",
             },
@@ -4051,6 +4066,5 @@ const menuState = [
     ],
   },
 ];
-
 
 export default menuState;
