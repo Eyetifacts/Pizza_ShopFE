@@ -5,20 +5,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 * {
-	font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 @layer components {
-	.btn-primary {
-		@apply px-5 py-1 rounded-full h-12 bg-black text-white text-2xl font-extrabold uppercase tracking-tight hover:bg-gray-800 active:bg-gray-800;
-	}
-	.btn-primary-lg {
-		@apply px-4 py-2 rounded-full bg-black text-white text-xl font-semibold uppercase tracking-tight hover:bg-gray-800 active:bg-gray-800;
-	}
-	.btn-secondary {
-		@apply px-2 py-1 rounded-full bg-white text-black text-lg font-semibold uppercase tracking-tight border-2 border-gray-400 hover:border-white active:border-white;
-	}
-	.btn-secondary-lg {
-		@apply px-3 py-1 rounded-full bg-white text-black text-xl font-semibold uppercase tracking-tight border-2 border-gray-400 hover:border-white active:border-white;
-	}
+  .btn-primary {
+    @apply px-3 py-2 rounded-full bg-black text-white text-xl font-semibold uppercase tracking-tight hover:bg-gray-800 active:bg-gray-800;
+  }
+  .btn-primary-lg {
+    @apply px-4 py-2 rounded-full bg-black text-white text-xl font-semibold uppercase tracking-tight hover:bg-gray-800 active:bg-gray-800;
+  }
+  .btn-secondary {
+    @apply px-3 py-2 rounded-full bg-white text-black text-xl font-semibold uppercase tracking-tight border-2 border-gray-400 hover:border-white active:border-white;
+  }
+  .btn-secondary-lg {
+    @apply px-3 py-1 rounded-full bg-white text-black text-xl font-semibold uppercase tracking-tight border-2 border-gray-400 hover:border-white active:border-white;
+  }
 }

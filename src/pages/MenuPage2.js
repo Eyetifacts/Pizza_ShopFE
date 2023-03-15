@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import MenuCarouselCard from "../components/menuPage/MenuCarouselCard";
 import LeadCard from "../components/menuPage/LeadCard";
 import menuInitialState from "../productDef/menuInitialHomeState";
+import ProductCard from "../components/menuPage/ProductCard2";
 import { images } from "../constants";
-import MenuSection from "../components/menuPage/MenuSection";
 
 const MenuPage = () => {
   const [menuState, setMenuState] = useState(menuInitialState);
@@ -33,7 +33,14 @@ const MenuPage = () => {
           </div>
         </div>
       </section>
-      <MenuSection sectionObject={sectionTwo} />
+      <section className="bg-slate-100">
+        <div className="ml-20 mt-5 text-5xl font-black uppercase">
+          PAPA PICKS
+        </div>
+        <div className="ml-20">
+          <ProductCard bgImg={images.pizza} />
+        </div>
+      </section>
     </>
   );
 };

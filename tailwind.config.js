@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -26,26 +26,28 @@ module.exports = {
       spacing: {
         "8xl": "96rem",
         "9xl": "128rem",
-        "88": "22rem",
-        "120": "29rem",
-        "128": "32rem",
-        "162": "38rem",
-        "196": "44rem",
-        "800": "800px",
-        "1280": "1280px"
+        88: "22rem",
+        120: "29rem",
+        128: "32rem",
+        162: "38rem",
+        196: "44rem",
+        360: "360px",
+        650: "650px",
+        800: "800px",
+        1280: "1280px",
       },
       borderRadius: {
-        "4xl": "2rem"
+        "4xl": "2rem",
       },
       borderWidth: {
-        DEFAULT: '1px',
-        '0': '0',
-        '2': '2px',
-        '3': '3px',
-        '4': '4px',
-        '6': '6px',
-        '8': '8px',
-      }
-    }
+        DEFAULT: "1px",
+        0: "0",
+        2: "2px",
+        3: "3px",
+        4: "4px",
+        6: "6px",
+        8: "8px",
+      },
+    },
   },
 };
