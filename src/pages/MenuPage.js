@@ -7,15 +7,11 @@ import MenuSection from "../components/menuPage/MenuSection";
 
 const MenuPage = () => {
   const [menuState, setMenuState] = useState(menuInitialState);
-  const titleProperty =
-    menuState[0].menuSections[0].menuCarousel.carouselCards[0].title;
-  const descriptionProperty =
-    menuState[0].menuSections[0].menuCarousel.carouselCards[0].description;
-  const imgProperty = images.pizza;
 
   const carouselItems = menuState[0].menuSections[0].menuCarousel.carouselCards;
   const leadItem = menuState[0].menuSections[0].menuCarousel.leadCard;
   const sectionTwo = menuState[0].menuSections[1];
+  const sectionFour = menuState[0].menuSections[3];
 
   return (
     <>
@@ -34,6 +30,7 @@ const MenuPage = () => {
         </div>
       </section>
       <MenuSection sectionObject={sectionTwo} />
+      <MenuSection sectionObject={sectionFour} />
     </>
   );
 };
