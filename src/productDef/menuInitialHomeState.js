@@ -148,162 +148,163 @@ const menuState = [
         title: "PAPA PICKS",
         description: null,
         type: "productCards",
-        productCards: {
-          productCardArray: [
-            {
-              title: "Pepperoni Pizza",
-              id: "11",
-              image: {
-                imageName: "card1",
-                imageUrl: images.pizza,
-              },
-              price: 17.5,
-              interestFlag: { isDisplayed: false, text: null },
-              description: "320 cal /slice, 8 slices",
-              details: {
-                text: "Detail",
-                detailsUrl: "details1Url",
-              },
-              productCardForm: {
-                size: {
-                  isDisplayed: true,
-                  value: "Large",
-                  options: ["Small", "Medium", "Large", "Extra Large"],
-                },
-                quantity: {
-                  isDisplayed: true,
-                  value: 1,
-                  options: [
-                    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-                    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
-                    33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
-                    48, 49, 50,
-                  ],
-                },
-                type: {
-                  isDisplayed: true,
-                  value: "Original Crust",
-                  options: [
-                    "Original Crust",
-                    "Crispy Parm Crust",
-                    "Epic Stuffed Crust",
-                    "Epic Pepperoni-Stuffed Crust",
-                    "NY Style Crust",
-                    "Thin Crust",
-                    "Gluten-Free Crust",
-                  ],
-                },
-                flavor: {
-                  isDisplayed: true,
-                  value: "Add Crust Flavor",
-                  options: ["None", "Garlic Parmesan Cheese"],
-                },
-              },
-              buttonGroup: [
-                {
-                  buttonStyle: "dark",
-                  buttonText: "ADD TO ORDER",
-                  buttonFunction: "addToOrderFunction",
-                },
-                {
-                  buttonStyle: "light",
-                  buttonText: "CUSTOMIZE",
-                  buttonFunction: "customizeFunction",
-                },
-              ],
+        productCards: [
+          {
+            title: "Pepperoni Pizza",
+            cardType: "ProductCard",
+            id: "11",
+            image: {
+              imageName: "card1",
+              imageUrl: images.pizza,
             },
-            {
-              title: "Sausage Pizza",
-              id: "12",
-              image: {
-                imageName: "card2",
-                imageUrl: images.pizza,
-              },
-              price: 17.5,
-              interestFlag: { isDisplayed: false, text: null },
-              description: "330 cal /slice, 8 slices",
-              details: {
-                text: "Details",
-                detailsUrl: "details1Url",
-              },
-              productCardForm: {
-                size: {
-                  isDisplayed: true,
-                  value: "Large",
-                },
-                quantity: {
-                  isDisplayed: true,
-                  value: 1,
-                },
-                type: {
-                  isDisplayed: true,
-                  value: "Original Crust",
-                },
-                flavor: {
-                  isDisplayed: true,
-                  value: "Add Crust Flavor",
-                },
-              },
-              buttonGroup: [
-                {
-                  buttonStyle: "dark",
-                  buttonText: "ADD TO ORDER",
-                  buttonFunction: "addToOrderFunction",
-                },
-                {
-                  buttonStyle: "light",
-                  buttonText: "CUSTOMIZE",
-                  buttonFunction: "customizeFunction",
-                },
-              ],
+            price: 17.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "320 cal /slice, 8 slices",
+            details: {
+              text: "Detail",
+              detailsUrl: "details1Url",
             },
-            {
-              title: "Cheese Pizza",
-              id: "13",
-              image: {
-                imageName: "card3",
-                imageUrl: images.pizza,
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Large",
+                options: ["Small", "Medium", "Large", "Extra Large"],
               },
-              price: 17.5,
-              interestFlag: { isDisplayed: false, text: null },
-              description: "270 cal /slice, 8 slices",
-              details: {
-                text: "Details",
-                detailsUrl: "details1Url",
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+                options: [
+                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+                  19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
+                  34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48,
+                  49, 50,
+                ],
               },
-              productCardForm: {
-                size: {
-                  isDisplayed: true,
-                  value: "Large",
-                },
-                quantity: {
-                  isDisplayed: true,
-                  value: 1,
-                },
-                type: {
-                  isDisplayed: true,
-                  value: "Original Crust",
-                },
-                flavor: {
-                  isDisplayed: true,
-                  value: "Add Crust Flavor",
-                },
+              type: {
+                isDisplayed: true,
+                value: "Original Crust",
+                options: [
+                  "Original Crust",
+                  "Crispy Parm Crust",
+                  "Epic Stuffed Crust",
+                  "Epic Pepperoni-Stuffed Crust",
+                  "NY Style Crust",
+                  "Thin Crust",
+                  "Gluten-Free Crust",
+                ],
               },
-              buttonGroup: [
-                {
-                  buttonStyle: "dark",
-                  buttonText: "ADD TO ORDER",
-                  buttonFunction: "addToOrderFunction",
-                },
-                {
-                  buttonStyle: "light",
-                  buttonText: "CUSTOMIZE",
-                  buttonFunction: "customizeFunction",
-                },
-              ],
+              flavor: {
+                isDisplayed: true,
+                value: "Add Crust Flavor",
+                options: ["None", "Garlic Parmesan Cheese"],
+              },
             },
-          ],
-        },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Sausage Pizza",
+            cardType: "ProductCard",
+            id: "12",
+            image: {
+              imageName: "card2",
+              imageUrl: images.pizza,
+            },
+            price: 17.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "330 cal /slice, 8 slices",
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Large",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Original Crust",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Add Crust Flavor",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+          {
+            title: "Cheese Pizza",
+            cardType: "ProductCard",
+            id: "13",
+            image: {
+              imageName: "card3",
+              imageUrl: images.pizza,
+            },
+            price: 17.5,
+            interestFlag: { isDisplayed: false, text: null },
+            description: "270 cal /slice, 8 slices",
+            details: {
+              text: "Details",
+              detailsUrl: "details1Url",
+            },
+            productCardForm: {
+              size: {
+                isDisplayed: true,
+                value: "Large",
+              },
+              quantity: {
+                isDisplayed: true,
+                value: 1,
+              },
+              type: {
+                isDisplayed: true,
+                value: "Original Crust",
+              },
+              flavor: {
+                isDisplayed: true,
+                value: "Add Crust Flavor",
+              },
+            },
+            buttonGroup: [
+              {
+                buttonStyle: "dark",
+                buttonText: "ADD TO ORDER",
+                buttonFunction: "addToOrderFunction",
+              },
+              {
+                buttonStyle: "light",
+                buttonText: "CUSTOMIZE",
+                buttonFunction: "customizeFunction",
+              },
+            ],
+          },
+        ],
       },
       {
         title: null,
@@ -337,9 +338,11 @@ const menuState = [
         description:
           "A layer of buttery, toasted parmesan cheese baked on the underside of our signature thin crust.",
         type: "advertCards",
-        advertCards: [
+        productCards: [
           {
+            id: "s40",
             title: "CREATE YOUR OWN CRISPY PARM PIZZA",
+            cardType: "FancierProductCard",
             price: 12.99,
             interestFlag: { isDisplayed: true, text: "LIMITED TIME" },
             description: null,
@@ -349,7 +352,7 @@ const menuState = [
             },
             image: {
               imageName: "advert1",
-              imageUrl: "advert1Url.png",
+              imageUrl: images.pizza,
             },
             buttonGroup: [
               {
@@ -360,7 +363,9 @@ const menuState = [
             ],
           },
           {
+            id: "s41",
             title: "DELUXE CHEESE CRISPY PARM PIZZA",
+            cardType: "FancierProductCard",
             price: 12.99,
             interestFlag: { isDisplayed: true, text: "LIMITED TIME" },
             description:
@@ -371,7 +376,7 @@ const menuState = [
             },
             image: {
               imageName: "advert1",
-              imageUrl: "advert1Url.png",
+              imageUrl: images.pizza,
             },
             buttonGroup: [
               {

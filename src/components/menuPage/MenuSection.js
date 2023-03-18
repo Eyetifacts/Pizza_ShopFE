@@ -1,18 +1,25 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import FancierProductCard from "./FancierProductCard";
 
-const MenuSection = (sectionObject) => {
+const MenuSection = ({sectionObject}) => {
   return (
     <section className="bg-slate-100">
       <div className="ml-20 mt-5 text-5xl font-black uppercase">
-        {sectionObject.sectionObject.title}
+        {sectionObject.title}
       </div>
       <div className="flex flex-row ml-20">
-        {sectionObject.sectionObject.productCards.productCardArray.map(
+        {sectionObject.productCards.map(
           (productCard) => {
-            return (
-              <ProductCard key={productCard.id} cardDetails={productCard} />
-            );
+            if (productCard.cardType === "ProductCard") {
+              return (
+                <ProductCard key={productCard.id} cardDetails={productCard} />
+              );
+            } else {
+              return (
+                <FancierProductCard key={productCard.id} cardDetails={productCard} />
+              );
+            }
           }
         )}
       </div>
