@@ -450,7 +450,7 @@ const menuState = [
             productCardForm: [
               {
                 fieldName: "size",
-                id: "S1F5",
+                id: "S1F8",
                 isDisplayed: true,
                 className:
                   "border-3 mx-2 mt-3 mb-1 pl-2 py-3 rounded-lg text-xl border-gray-300 w-72",
@@ -464,11 +464,10 @@ const menuState = [
               },
               {
                 fieldName: "quantity",
-                id: "S1F6",
+                id: "S1F9",
                 isDisplayed: true,
                 className:
                   "border-3 ml-3 mt-3 mb-1 px-2 py-3 rounded-lg text-xl border-gray-300 w-14",
-                value: 1,
                 value: 1,
                 options: [
                   { key: "1", value: 1 },
@@ -523,12 +522,13 @@ const menuState = [
                   { key: "50", value: 50 },
                 ],
               },
+
               {
                 fieldName: "type",
-                id: "S1F7",
+                id: "S1F10",
                 isDisplayed: true,
                 className:
-                  "border-3 ml-3 mt-3 mb-1 px-2 py-3 rounded-lg text-xl border-gray-300 w-14",
+                  "border-3 ml-2 my-1 pl-2 py-3 rounded-lg text-xl border-gray-300 w-360",
                 value: "Original Crust",
                 options: [
                   { key: "original", value: "Original Crust" },
@@ -545,7 +545,7 @@ const menuState = [
               },
               {
                 fieldName: "flavor",
-                id: "S1F8",
+                id: "S1F11",
                 isDisplayed: true,
                 className:
                   "border-3 mx-2 my-1 pl-2 py-3 rounded-lg text-xl border-gray-300 w-360",
