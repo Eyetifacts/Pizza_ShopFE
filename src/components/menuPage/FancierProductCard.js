@@ -1,8 +1,13 @@
 import React from "react";
 import ProductCardForm from "./ProductCardForm";
-import { images } from "../../constants";
 
 const FancierProductCard = ({ cardDetails }) => {
+  const displayProductCardForm = (cardDetails) => {
+    if (cardDetails.productCardForm) {
+      return <ProductCardForm fields={cardDetails.productCardForm} />;
+    }
+  };
+
   return (
     <div className="relative h-650 w-96 border-2 mx-2 mt-5 rounded-3xl border-gray-300">
       <img
@@ -26,6 +31,7 @@ const FancierProductCard = ({ cardDetails }) => {
             {cardDetails.details.text}
           </h2>
         </div>
+        <div>{displayProductCardForm(cardDetails)}</div>
         <div className="h-20 mt-2 mb-5 pt-8 left-0 bottom-0">
           {cardDetails.buttonGroup.map((btn) => (
             <button key={btn.id} className="ml-3 btn-primary">

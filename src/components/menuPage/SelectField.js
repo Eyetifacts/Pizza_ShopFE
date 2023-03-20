@@ -9,14 +9,13 @@ const SelectField = ({ fieldObject }) => {
       className={fieldObject.className}
       key={fieldObject.id}
     >
-      {fieldObject &&
-        fieldObject.options.map((option) => {
-          return (
-            <option id={option.key} key={option.key}>
-              {option.value}
-            </option>
-          );
-        })}
+      {fieldObject.options.map((option) => {
+        return (
+          <option id={option.key} key={option.key}>
+            {option.value}
+          </option>
+        );
+      })}
     </Field>
   );
 };
