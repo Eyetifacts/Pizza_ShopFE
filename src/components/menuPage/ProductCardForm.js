@@ -3,7 +3,6 @@ import { Formik, Form } from "formik";
 import SelectField from "./SelectField";
 
 const ProductCardForm = ({ fields }) => {
-  console.log(fields);
   return (
     <Formik>
       <Form>

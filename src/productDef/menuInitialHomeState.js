@@ -164,7 +164,6 @@ const menuState = [
               text: "Detail",
               detailsUrl: "details1Url",
             },
-
             productCardForm: [
               {
                 fieldName: "size",
@@ -523,7 +522,6 @@ const menuState = [
                   { key: "50", value: 50 },
                 ],
               },
-
               {
                 fieldName: "type",
                 id: "S1F10",
@@ -721,7 +719,7 @@ const menuState = [
               {
                 fieldName: "flavor",
                 id: "S1F14",
-                isDisplayed: true,
+                isDisplayed: false,
                 className:
                   "border-3 mx-2 my-1 pl-2 py-3 rounded-lg text-xl border-gray-300 w-360",
                 value: "Add Crust Flavor",
