@@ -722,7 +722,7 @@ const menuState = [
                 isDisplayed: false,
                 className:
                   "border-3 mx-2 my-1 pl-2 py-3 rounded-lg text-xl border-gray-300 w-360",
-                value: "Add Crust Flavor",
+                value: "Add Crust flavor",
                 options: [
                   { key: "none", value: "None" },
                   {
