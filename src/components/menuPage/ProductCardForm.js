@@ -5,19 +5,14 @@ import SelectField2 from "./SelectField2";
 import SelectField3 from "./SelectField3";
 import SelectField4 from "./SelectField4";
 
-const ProductCardForm = () => {
+const ProductCardForm = ({ fields }) => {
   return (
     <Formik>
       <Form>
         <div>
-          <SelectField />
-          <SelectField2 />
-        </div>
-        <div>
-          <SelectField3 />
-        </div>
-        <div>
-          <SelectField4 />
+          {fields.map((field) => (
+            <SelectField key={field.id} fieldObject={field} />
+          ))}
         </div>
       </Form>
     </Formik>

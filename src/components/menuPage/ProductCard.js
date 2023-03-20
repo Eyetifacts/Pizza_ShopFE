@@ -24,7 +24,7 @@ const ProductCard = ({ cardDetails }) => {
         </p>
       </div>
       <div>
-        <ProductCardForm />
+        <ProductCardForm fields={cardDetails.productCardForm} />
       </div>
       <div className="absolute h-20 mt-2 mb-5 pt-8 left-0 bottom-0">
         <button className="ml-3 btn-primary">
