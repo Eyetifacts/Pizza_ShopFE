@@ -1,8 +1,13 @@
 import React from "react";
 import ProductCardForm from "./ProductCardForm";
-import { images } from "../../constants";
 
 const FancierProductCard = ({ cardDetails }) => {
+  const displayProductCardForm = (cardDetails) => {
+    if (cardDetails.productCardForm) {
+      return <ProductCardForm fields={cardDetails.productCardForm} />;
+    }
+  };
+
   return (
     <div className="relative h-650 w-96 border-2 mx-2 mt-5 rounded-3xl border-gray-300">
       <img
@@ -26,26 +31,19 @@ const FancierProductCard = ({ cardDetails }) => {
             {cardDetails.details.text}
           </h2>
         </div>
-        {/* <div>
-          <ProductCardForm />
-        </div> */}
+        <div>{displayProductCardForm(cardDetails)}</div>
         <div className="h-20 mt-2 mb-5 pt-8 left-0 bottom-0">
           {cardDetails.buttonGroup.map((btn) => (
-            <button className="ml-3 btn-primary">{btn.buttonText}</button>
+            <button key={btn.id} className="ml-3 btn-primary">
+              {btn.buttonText}
+            </button>
           ))}
-          {/* <button className="ml-3 btn-primary">
-          {cardDetails.buttonGroup[0].buttonText}
-          </button>
-          <button className="mx-5 btn-secondary">
-          {cardDetails.buttonGroup[1].buttonText}
-        </button> */}
         </div>
-        {
-          cardDetails.description &&
+        {cardDetails.description && (
           <p className="text-white text-lg mt-1 p-3 border-white border-t-2">
             {`${cardDetails.description}`}
           </p>
-        }
+        )}
       </div>
     </div>
   );
