@@ -277,11 +277,13 @@ const menuState = [
             ],
             buttonGroup: [
               {
+                id: "BTN00",
                 buttonStyle: "dark",
                 buttonText: "ADD TO ORDER",
                 buttonFunction: "addToOrderFunction",
               },
               {
+                id: "BTN01",
                 buttonStyle: "light",
                 buttonText: "CUSTOMIZE",
                 buttonFunction: "customizeFunction",
@@ -417,11 +419,13 @@ const menuState = [
             ],
             buttonGroup: [
               {
+                id: "BTN02",
                 buttonStyle: "dark",
                 buttonText: "ADD TO ORDER",
                 buttonFunction: "addToOrderFunction",
               },
               {
+                id: "BTN03",
                 buttonStyle: "light",
                 buttonText: "CUSTOMIZE",
                 buttonFunction: "customizeFunction",
@@ -557,11 +561,13 @@ const menuState = [
             ],
             buttonGroup: [
               {
+                id: "BTN06",
                 buttonStyle: "dark",
                 buttonText: "ADD TO ORDER",
                 buttonFunction: "addToOrderFunction",
               },
               {
+                id: "BTN07",
                 buttonStyle: "light",
                 buttonText: "CUSTOMIZE",
                 buttonFunction: "customizeFunction",
@@ -590,6 +596,7 @@ const menuState = [
           },
           buttonGroup: [
             {
+              id: "BTN08",
               buttonStyle: "dark",
               buttonText: "CUSTOMIZE",
               buttonFunction: "customizeFunction",
@@ -620,6 +627,7 @@ const menuState = [
             },
             buttonGroup: [
               {
+                id: "BTN09",
                 buttonStyle: "dark",
                 buttonText: "CUSTOMIZE",
                 buttonFunction: "customizeFunction",
@@ -644,11 +652,13 @@ const menuState = [
             },
             buttonGroup: [
               {
+                id: "BTN10",
                 buttonStyle: "light",
                 buttonText: "ADD TO ORDER",
                 buttonFunction: "addToOrderFunction",
               },
               {
+                id: "BTN11",
                 buttonStyle: "dark",
                 buttonText: "CUSTOMIZE",
                 buttonFunction: "customizeFunction",
@@ -696,11 +706,13 @@ const menuState = [
               },
               buttonGroup: [
                 {
+                  id: "BTN12",
                   buttonStyle: "dark",
                   buttonText: "ADD TO ORDER",
                   buttonFunction: "addToOrderFunction",
                 },
                 {
+                  id: "BTN13",
                   buttonStyle: "light",
                   buttonText: "CUSTOMIZE",
                   buttonFunction: "customizeFunction",

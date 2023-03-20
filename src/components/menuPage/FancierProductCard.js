@@ -26,26 +26,18 @@ const FancierProductCard = ({ cardDetails }) => {
             {cardDetails.details.text}
           </h2>
         </div>
-        {/* <div>
-          <ProductCardForm />
-        </div> */}
         <div className="h-20 mt-2 mb-5 pt-8 left-0 bottom-0">
           {cardDetails.buttonGroup.map((btn) => (
-            <button className="ml-3 btn-primary">{btn.buttonText}</button>
+            <button key={btn.id} className="ml-3 btn-primary">
+              {btn.buttonText}
+            </button>
           ))}
-          {/* <button className="ml-3 btn-primary">
-          {cardDetails.buttonGroup[0].buttonText}
-          </button>
-          <button className="mx-5 btn-secondary">
-          {cardDetails.buttonGroup[1].buttonText}
-        </button> */}
         </div>
-        {
-          cardDetails.description &&
+        {cardDetails.description && (
           <p className="text-white text-lg mt-1 p-3 border-white border-t-2">
             {`${cardDetails.description}`}
           </p>
-        }
+        )}
       </div>
     </div>
   );

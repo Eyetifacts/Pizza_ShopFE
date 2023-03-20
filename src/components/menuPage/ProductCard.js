@@ -27,12 +27,11 @@ const ProductCard = ({ cardDetails }) => {
         <ProductCardForm fields={cardDetails.productCardForm} />
       </div>
       <div className="absolute h-20 mt-2 mb-5 pt-8 left-0 bottom-0">
-        <button className="ml-3 btn-primary">
-          {cardDetails.buttonGroup[0].buttonText}
-        </button>
-        <button className="mx-5 btn-secondary">
-          {cardDetails.buttonGroup[1].buttonText}
-        </button>
+        {cardDetails.buttonGroup.map((btn) => (
+          <button key={btn.id} className="ml-3 btn-primary">
+            {btn.buttonText}
+          </button>
+        ))}
       </div>
     </div>
   );
