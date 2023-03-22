@@ -329,7 +329,6 @@ const menuState = [
                 className:
                   "border-2 ml-3 mt-3 mb-1 px-2 py-3 rounded-lg text-xl border-gray-300 w-14",
                 value: 1,
-                value: 1,
                 options: [
                   { key: "1", value: 1 },
                   { key: "2", value: 2 },
