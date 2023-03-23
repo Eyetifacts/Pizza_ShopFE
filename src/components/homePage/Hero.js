@@ -14,7 +14,7 @@ const Hero = () => {
 				</video>
 				<div className="absolute flex flex-col top-0 bottom-0 left-0 right-0 justify-center items-start bg-black bg-opacity-10">
 					<div className="ml-5">
-						<h1 className="text-white bg-black px-3 py-2mb-8 text-4xl font-semibold -skew-y-6 items-start flex flex-row w-80 justify-center">
+						<h1 className="text-white bg-black px-3 py-2 mb-8 text-4xl font-semibold -skew-y-6 items-start flex flex-row w-80 justify-center">
 							STARTING AT $12{" "}
 							<span className="text-xl underline ml-1"> 99</span>
 						</h1>
