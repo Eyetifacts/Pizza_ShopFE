@@ -6,6 +6,7 @@ import { images } from "../constants"
 import MenuSection from "../components/menuPage/MenuSection"
 import BannerCard from "../components/menuPage/BannerCard"
 
+
 const MenuPage = () => {
 	const [menuState, setMenuState] = useState(menuInitialState)
 

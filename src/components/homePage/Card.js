@@ -4,7 +4,7 @@ const Card = ({ item }) => {
 	const { title, price, newItem, bgImg, linkText } = item
 
 	return (
-		<div className="relative mx-5 mb-10 w-80 shrink-0 h-96">
+		<div className="relative mx-5 mb-10 w-80 shrink-0 h-96 cursor-pointer">
 			<div className="absolute top-0 bottom-0 left-0 right-0">
 				<img
 					src={bgImg}

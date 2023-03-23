@@ -1,38 +1,29 @@
-import React from "react";
-import { HiShoppingCart } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import React from "react"
+import { HiShoppingCart } from "react-icons/hi"
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
 	let activeStyle = {
-    textDecoration: "underline"
-  };
+		textDecoration: "underline",
+	}
 
 	return (
-		<div className="flex flex-row items-center gap-3 text-xl lg:text-2xl h-12 lg:h-20">
+		<div className="flex flex-row items-center gap-3 text-xl lg:text-2xl h-12 lg:h-20 shadow-lg">
 			<div className="flex-row flex flex-1 items-center lg:border-r lg:border-r-gray h-20">
 				<div className="flex flex-row gap-6 ml-5 font-semibold">
-					<NavLink 
+					<NavLink
 						to="/order/menu"
-						style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-					>
+						style={({ isActive }) => (isActive ? activeStyle : undefined)}>
 						MENU
 					</NavLink>
 					<NavLink
 						to="/order/specials"
-						style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-					>
+						style={({ isActive }) => (isActive ? activeStyle : undefined)}>
 						SPECIALS
 					</NavLink>
 					<NavLink
 						to="/order/papa-rewards"
-						style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-					>
+						style={({ isActive }) => (isActive ? activeStyle : undefined)}>
 						PAPA REWARDS
 					</NavLink>
 				</div>
@@ -59,7 +50,7 @@ const Navbar = () => {
 				LOG IN
 			</button>
 		</div>
-	);
+	)
 }
 
-export default Navbar;
+export default Navbar
