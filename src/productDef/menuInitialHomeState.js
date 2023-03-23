@@ -580,11 +580,11 @@ const menuState = [
 				title: "Current Special",
 				description: null,
 				id: "S2",
-				type: "advertRowCard",
-				advertRowCard: {
+				type: "bannerCard",
+				bannerCard: {
 					image: {
 						imageName: "advert1",
-						imageUrl: "advert1Url.png",
+						imageUrl: images.pizzaLandscape,
 					},
 					title: "EPIC STUFFED CRUST PIZZA",
 					price: 13.99,
@@ -599,7 +599,7 @@ const menuState = [
 						{
 							id: "BTN08",
 							buttonStyle: "dark",
-							buttonText: "CUSTOMIZE",
+							buttonText: "ADD & CUSTOMIZE",
 							buttonFunction: "customizeFunction",
 						},
 					],
@@ -796,7 +796,7 @@ const menuState = [
 							imageUrl: images.pizza,
 						},
 						price: 19.0,
-						interestFlag: { isDisplayed: true, text: "New!" },
+						interestFlag: { isDisplayed: false, text: null },
 						description: "340 cal /slice, 8 slices",
 						details: {
 							text: "Detail",
