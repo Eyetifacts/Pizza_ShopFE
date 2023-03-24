@@ -4,7 +4,6 @@ import FancierProductCard from "./FancierProductCard"
 import BannerCard from "./BannerCard"
 
 const MenuSection = ({ sectionObject }) => {
-	console.log(sectionObject.productCards)
 	if (sectionObject.type === "bannerCard") {
 		return <BannerCard cardDetails={sectionObject.bannerCard} />
 	}
