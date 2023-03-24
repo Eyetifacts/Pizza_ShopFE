@@ -7,8 +7,10 @@ const tabLinks = [
 	{ text: "Papadias", to: "papadias", id: 3 },
 	{ text: "Papa Bites", to: "papa-bites", id: 4 },
 	{ text: "Wings", to: "wings", id: 5 },
-	{ text: "More", to: "papadias", id: 6 },
-	{ text: "And more", to: "wings", id: 7 },
+	{ text: "Sides", to: "sides", id: 6 },
+	{ text: "Desserts", to: "desserts", id: 7 },
+	{ text: "Drinks", to: "drinks", id: 8 },
+	{ text: "Extras", to: "extras", id: 9 },
 ]
 
 const MenuPageTabBar = () => {

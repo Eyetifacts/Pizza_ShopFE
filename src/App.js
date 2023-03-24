@@ -11,11 +11,15 @@ import HomePage from "./pages/HomePage"
 import MenuPage from "./pages/MenuPage"
 import MenuPageTabBar from "./components/menuPage/MenuPageTabBar"
 import PapaBowlsPage from "./components/menuPage/papaBowlsTab/PapaBowlsPage"
-
-import SpecialsPage from "./pages/SpecialsPage"
 import PapadiasPage from "./components/menuPage/papadiasTab/PapadiasPage"
 import PapaBitesPage from "./components/menuPage/papaBitesTab/PapaBitesPage"
 import WingsPage from "./components/menuPage/wingsTab/WingsPage"
+import SidesPage from "./components/menuPage/sidesTab/SidesPage"
+import DessertsPage from "./components/menuPage/dessertsTab/DessertsPage"
+import DrinksPage from "./components/menuPage/drinksTab/DrinksPage"
+import ExtrasPage from "./components/menuPage/extrasTab/ExtrasPage"
+
+import SpecialsPage from "./pages/SpecialsPage"
 // import PapaRewardsPage from "./pages/PapaRewardsPage";
 
 // Base route "/" must be be the last one listed when using HashRouter below
@@ -34,6 +38,10 @@ function App() {
 					<Route path="papadias" element={<PapadiasPage />} />
 					<Route path="papa-bites" element={<PapaBitesPage />} />
 					<Route path="wings" element={<WingsPage />} />
+					<Route path="sides" element={<SidesPage />} />
+					<Route path="desserts" element={<DessertsPage />} />
+					<Route path="drinks" element={<DrinksPage />} />
+					<Route path="extras" element={<ExtrasPage />} />
 					<Route index element={<MenuPage />} />
 				</Route>
 				<Route exact path="/order/specials" element={<SpecialsPage />} />
