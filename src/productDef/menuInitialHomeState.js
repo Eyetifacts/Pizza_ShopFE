@@ -2962,9 +2962,10 @@ const menuState = [
 				title: "PAPA BOWLS",
 				description: null,
 				type: "advertRowCard, productCard",
-				adverRowCards: [
+				productCards: [
 					{
-						type: "advertRowCard",
+						cardType: "advertRowCard",
+						id: 0,
 						image: {
 							imageName: "advert1",
 							imageUrl: "advert1Url.png",
@@ -3010,7 +3011,8 @@ const menuState = [
 						],
 					},
 					{
-						type: "advertRowCard",
+						cardType: "advertRowCard",
+						id: 1,
 						image: {
 							imageName: "advert2",
 							imageUrl: "advert2Url.png",
@@ -3056,7 +3058,8 @@ const menuState = [
 						],
 					},
 					{
-						type: "advertRowCard",
+						cardType: "advertRowCard",
+						id: 2,
 						image: {
 							imageName: "advert3",
 							imageUrl: "advert3Url.png",
@@ -3101,10 +3104,10 @@ const menuState = [
 							},
 						],
 					},
-				],
-				productCards: [
 					{
 						title: "Create Your Own Papa Bowl",
+						id: 3,
+						cardType: "ProductCard",
 						image: {
 							imageName: "card1",
 							imageUrl: "card1Url.png",

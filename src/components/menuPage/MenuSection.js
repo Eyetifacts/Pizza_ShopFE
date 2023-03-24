@@ -4,11 +4,12 @@ import FancierProductCard from "./FancierProductCard"
 import BannerCard from "./BannerCard"
 
 const MenuSection = ({ sectionObject }) => {
+	console.log(sectionObject.productCards)
 	if (sectionObject.type === "bannerCard") {
 		return <BannerCard cardDetails={sectionObject.bannerCard} />
 	}
 	return (
-		<section className="bg-slate-100">
+		<section>
 			<div className="ml-20 mt-5 text-5xl font-black uppercase">
 				{sectionObject.title}
 			</div>
