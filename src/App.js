@@ -10,14 +10,7 @@ import Footer from "./components/footer/Footer"
 import HomePage from "./pages/HomePage"
 import MenuPage from "./pages/MenuPage"
 import MenuPageTabBar from "./components/menuPage/MenuPageTabBar"
-import PapaBowlsPage from "./components/menuPage/papaBowlsTab/PapaBowlsPage"
-import PapadiasPage from "./components/menuPage/papadiasTab/PapadiasPage"
-import PapaBitesPage from "./components/menuPage/papaBitesTab/PapaBitesPage"
-import WingsPage from "./components/menuPage/wingsTab/WingsPage"
-import SidesPage from "./components/menuPage/sidesTab/SidesPage"
-import DessertsPage from "./components/menuPage/dessertsTab/DessertsPage"
-import DrinksPage from "./components/menuPage/drinksTab/DrinksPage"
-import ExtrasPage from "./components/menuPage/extrasTab/ExtrasPage"
+import MenuTabPage from "./components/menuPage/MenuTabPage"
 
 import SpecialsPage from "./pages/SpecialsPage"
 // import PapaRewardsPage from "./pages/PapaRewardsPage";
@@ -34,14 +27,7 @@ function App() {
 			<Routes>
 				<Route exact path="/order/menu" element={<MenuPageTabBar />}>
 					<Route path="pizza" element={<MenuPage />} />
-					<Route path="papa-bowls" element={<PapaBowlsPage />} />
-					<Route path="papadias" element={<PapadiasPage />} />
-					<Route path="papa-bites" element={<PapaBitesPage />} />
-					<Route path="wings" element={<WingsPage />} />
-					<Route path="sides" element={<SidesPage />} />
-					<Route path="desserts" element={<DessertsPage />} />
-					<Route path="drinks" element={<DrinksPage />} />
-					<Route path="extras" element={<ExtrasPage />} />
+					<Route path=":category" element={<MenuTabPage />} />
 					<Route index element={<MenuPage />} />
 				</Route>
 				<Route exact path="/order/specials" element={<SpecialsPage />} />
