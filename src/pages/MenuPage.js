@@ -4,8 +4,6 @@ import LeadCard from "../components/menuPage/LeadCard"
 import menuInitialState from "../productDef/menuInitialHomeState"
 import { images } from "../constants"
 import MenuSection from "../components/menuPage/MenuSection"
-import BannerCard from "../components/menuPage/BannerCard"
-
 
 const MenuPage = () => {
 	const [menuState, setMenuState] = useState(menuInitialState)
@@ -37,7 +35,7 @@ const MenuPage = () => {
 				</div>
 			</section>
 			<MenuSection key={sectionTwo.id} sectionObject={sectionTwo} />
-			<MenuSection key={sectionTwo.id} sectionObject={sectionThree} />
+			<MenuSection key={sectionThree.id} sectionObject={sectionThree} />
 			<MenuSection key={sectionFour.id} sectionObject={sectionFour} />
 			<MenuSection key={sectionFive.id} sectionObject={sectionFive} />
 			<MenuSection key={sectionSix.id} sectionObject={sectionSix} />

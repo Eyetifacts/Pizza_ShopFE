@@ -8,7 +8,7 @@ const MenuSection = ({ sectionObject }) => {
 		return <BannerCard cardDetails={sectionObject.bannerCard} />
 	}
 	return (
-		<section className="bg-slate-100">
+		<section>
 			<div className="ml-20 mt-5 text-5xl font-black uppercase">
 				{sectionObject.title}
 			</div>
