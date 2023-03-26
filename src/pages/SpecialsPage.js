@@ -42,7 +42,7 @@ const SPECIALS = [
 ]
 
 const SpecialsPage = () => {
-	const [specials, setSpecials] = useState(SPECIALS)
+	const [specials] = useState(SPECIALS)
 	return (
 		<div className="p-12">
 			<nav className="flex space-x-4">
