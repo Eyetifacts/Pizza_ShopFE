@@ -1,7 +1,5 @@
 import React from "react";
 
-// title, bgImg, buttonText, description
-
 const LeadCard = ({ item }) => {
   return (
     <div className="m-5 mb-10 w-80 shrink-0 flex flex-col justify-center">

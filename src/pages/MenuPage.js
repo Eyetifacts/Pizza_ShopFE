@@ -6,7 +6,7 @@ import { images } from "../constants"
 import MenuSection from "../components/menuPage/MenuSection"
 
 const MenuPage = () => {
-	const [menuState, setMenuState] = useState(menuInitialState)
+	const [menuState] = useState(menuInitialState)
 
 	const carouselItems = menuState[0].menuSections[0].menuCarousel.carouselCards
 	const leadItem = menuState[0].menuSections[0].menuCarousel.leadCard

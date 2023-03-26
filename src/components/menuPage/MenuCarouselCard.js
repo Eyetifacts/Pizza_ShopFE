@@ -1,7 +1,5 @@
-import React from "react"
-import FlagComponent from "../FlagComponent"
-
-// title, bgImg, buttonText, description
+import React from "react";
+import FlagComponent from "../FlagComponent";
 
 const MenuCarouselCard = ({ item, bgImg }) => {
 	return (
@@ -35,7 +33,7 @@ const MenuCarouselCard = ({ item, bgImg }) => {
 				</button>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default MenuCarouselCard
+export default MenuCarouselCard;

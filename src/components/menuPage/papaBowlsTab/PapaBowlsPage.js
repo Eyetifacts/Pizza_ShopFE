@@ -3,7 +3,7 @@ import menuInitialState from "../../../productDef/menuInitialHomeState"
 import MenuSection from "../MenuSection"
 
 const PapaBowlsPage = () => {
-	const [menuState, setMenuState] = useState(menuInitialState)
+	const [menuState] = useState(menuInitialState)
 
 	const papaBowls = menuState[1].menuSections[0]
 

@@ -1,14 +1,7 @@
 import React from "react"
-import ProductCardForm from "./ProductCardForm"
 import FlagComponent from "../FlagComponent"
 
 const FancierProductCard = ({ cardDetails }) => {
-	// const displayProductCardForm = (cardDetails) => {
-	// 	if (cardDetails.productCardForm) {
-	// 		return <ProductCardForm fields={cardDetails.productCardForm} />
-	// 	}
-	// }
-
 	return (
 		<div className="relative h-650 w-96 border-2 mx-2 mt-5 rounded-3xl border-gray-300">
 			<img
