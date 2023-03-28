@@ -7,7 +7,7 @@ const SpecialsSection = ({ sectionObject }) => {
 			<h1 className="uppercase text-4xl tracking-tight font-extrabold py-4">
 				Specials
 			</h1>
-			<div>
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 				{sectionObject.specialsCards.map((special) => (
 					<SpecialsCard cardDetails={special} key={special.id} />
 				))}
