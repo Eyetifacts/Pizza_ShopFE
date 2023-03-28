@@ -9,10 +9,10 @@ const MenuSection = ({ sectionObject }) => {
 	}
 	return (
 		<section>
-			<div className="ml-20 mt-5 text-5xl font-black uppercase">
+			<div className="uppercase text-4xl tracking-tight font-extrabold py-4">
 				{sectionObject.title}
 			</div>
-			<div className="flex flex-row ml-20 flex-wrap">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 				{sectionObject.productCards.map((productCard) => {
 					if (productCard.cardType === "ProductCard") {
 						return (
