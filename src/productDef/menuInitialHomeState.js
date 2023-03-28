@@ -2968,7 +2968,7 @@ const menuState = [
 						id: 0,
 						image: {
 							imageName: "advert1",
-							imageUrl: "advert1Url.png",
+							imageUrl: images.pizza,
 						},
 						title: "ITALIAN MEATS TRIO PAPA BOWL",
 						price: 8.49,
@@ -3015,7 +3015,7 @@ const menuState = [
 						id: 1,
 						image: {
 							imageName: "advert2",
-							imageUrl: "advert2Url.png",
+							imageUrl: images.pizza,
 						},
 						title: "GARDEN VEGGIE PAPA BOWL",
 						price: 8.49,
@@ -3062,7 +3062,7 @@ const menuState = [
 						id: 2,
 						image: {
 							imageName: "advert3",
-							imageUrl: "advert3Url.png",
+							imageUrl: images.pizza,
 						},
 						title: "CHICKEN ALFREDO PAPA BOWL",
 						price: 8.49,
@@ -3110,7 +3110,7 @@ const menuState = [
 						cardType: "ProductCard",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3161,7 +3161,7 @@ const menuState = [
 						title: "Parmesan Crusted Create Your Own Papadia",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3200,7 +3200,7 @@ const menuState = [
 						title: "Parmesan Crusted Philly Cheesesteak Papadia",
 						image: {
 							imageName: "card2",
-							imageUrl: "card1Ur2.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3244,7 +3244,7 @@ const menuState = [
 						title: "Parmesan Crusted BBQ Chicken & Bacon Papadia",
 						image: {
 							imageName: "card3",
-							imageUrl: "card1Ur3.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3288,7 +3288,7 @@ const menuState = [
 						title: "Parmesan Crusted Grilled Buffalo Chicken Papadia",
 						image: {
 							imageName: "card4",
-							imageUrl: "card1Ur4.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3332,7 +3332,7 @@ const menuState = [
 						title: "Parmesan Crusted Meatball Pepperoni Papadia",
 						image: {
 							imageName: "card5",
-							imageUrl: "card1Ur5.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3376,7 +3376,7 @@ const menuState = [
 						title: "Parmesan Crusted Italian Papadia",
 						image: {
 							imageName: "card6",
-							imageUrl: "card1Ur6.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3427,7 +3427,7 @@ const menuState = [
 						title: "Create Your Own Papadia",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.pizza,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3466,7 +3466,7 @@ const menuState = [
 						title: "Philly Cheesesteak Papadia",
 						image: {
 							imageName: "card2",
-							imageUrl: "card1Ur2.png",
+							imageUrl: images.pizza,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3510,7 +3510,7 @@ const menuState = [
 						title: "BBQ Chicken & Bacon Papadia",
 						image: {
 							imageName: "card3",
-							imageUrl: "card1Ur3.png",
+							imageUrl: images.pizza,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3554,7 +3554,7 @@ const menuState = [
 						title: "Grilled Buffalo Chicken Papadia",
 						image: {
 							imageName: "card4",
-							imageUrl: "card1Ur4.png",
+							imageUrl: images.pizza,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3598,7 +3598,7 @@ const menuState = [
 						title: "Meatball Pepperoni Papadia",
 						image: {
 							imageName: "card5",
-							imageUrl: "card1Ur5.png",
+							imageUrl: images.pizza,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3642,7 +3642,7 @@ const menuState = [
 						title: "Italian Papadia",
 						image: {
 							imageName: "card6",
-							imageUrl: "card1Ur6.png",
+							imageUrl: images.pizza,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3699,7 +3699,7 @@ const menuState = [
 						type: "advertRowCard",
 						image: {
 							imageName: "advert1",
-							imageUrl: "advert1Url.png",
+							imageUrl: images.pizza,
 						},
 						title: "OREO® COOKIE PAPA BITES",
 						price: 6.29,
@@ -3739,7 +3739,7 @@ const menuState = [
 						type: "advertRowCard",
 						image: {
 							imageName: "advert2",
-							imageUrl: "advert1Ur2.png",
+							imageUrl: images.pizza,
 						},
 						title: "CHICKEN PARMESAN PAPA BITES",
 						price: 6.29,
@@ -3779,7 +3779,7 @@ const menuState = [
 						type: "advertRowCard",
 						image: {
 							imageName: "advert2",
-							imageUrl: "advert1Ur2.png",
+							imageUrl: images.pizza,
 						},
 						title: "JALAPEÑO PAPA BITES",
 						price: 6.29,
@@ -3821,7 +3821,7 @@ const menuState = [
 						title: "Create Your Own Papa Bowl",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.pizza,
 						},
 						price: 8.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3872,7 +3872,7 @@ const menuState = [
 						title: "Unsauced Roasted Wings",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 12.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3911,7 +3911,7 @@ const menuState = [
 						title: "Hot Lemon Pepper Wings",
 						image: {
 							imageName: "card2",
-							imageUrl: "card1Ur2.png",
+							imageUrl: images.sides,
 						},
 						price: 12.0,
 						interestFlag: { isDisplayed: true, text: "NEW FLAVOR" },
@@ -3950,7 +3950,7 @@ const menuState = [
 						title: "Garlic Parmesan Wings",
 						image: {
 							imageName: "card3",
-							imageUrl: "card1Ur3.png",
+							imageUrl: images.sides,
 						},
 						price: 12.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -3989,7 +3989,7 @@ const menuState = [
 						title: "Buffalo Wings",
 						image: {
 							imageName: "card4",
-							imageUrl: "card1Ur4.png",
+							imageUrl: images.sides,
 						},
 						price: 12.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4028,7 +4028,7 @@ const menuState = [
 						title: "BBQ Wings",
 						image: {
 							imageName: "card5",
-							imageUrl: "card1Ur5.png",
+							imageUrl: images.sides,
 						},
 						price: 12.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4067,7 +4067,7 @@ const menuState = [
 						title: "Honey Chipotle Wings",
 						image: {
 							imageName: "card6",
-							imageUrl: "card1Ur6.png",
+							imageUrl: images.sides,
 						},
 						price: 12.0,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4113,7 +4113,7 @@ const menuState = [
 						title: "Chicken Poppers",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 9.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4152,7 +4152,7 @@ const menuState = [
 						title: "Hot Lemon Pepper Chicken Poppers",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 9.5,
 						interestFlag: { isDisplayed: true, text: "NEW FLAVOR" },
@@ -4191,7 +4191,7 @@ const menuState = [
 						title: "Buffalo Chicken Poppers",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3UrL.png",
+							imageUrl: images.sides,
 						},
 						price: 9.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4230,7 +4230,7 @@ const menuState = [
 						title: "BBQ Chicken Poppers",
 						image: {
 							imageName: "card4",
-							imageUrl: "card4UrL.png",
+							imageUrl: images.sides,
 						},
 						price: 9.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4269,7 +4269,7 @@ const menuState = [
 						title: "Honey Chipotle Chicken Poppers",
 						image: {
 							imageName: "card5",
-							imageUrl: "card5UrL.png",
+							imageUrl: images.sides,
 						},
 						price: 9.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4320,7 +4320,7 @@ const menuState = [
 						type: "advertRowCard",
 						image: {
 							imageName: "advert1",
-							imageUrl: "advert1Url.png",
+							imageUrl: images.sides,
 						},
 						title: "CHICKEN PARMESAN PAPA BITES",
 						price: 6.29,
@@ -4360,7 +4360,7 @@ const menuState = [
 						type: "advertRowCard",
 						image: {
 							imageName: "advert2",
-							imageUrl: "advert2Url.png",
+							imageUrl: images.sides,
 						},
 						title: "JALAPEÑO PAPA BITES",
 						price: 6.29,
@@ -4402,7 +4402,7 @@ const menuState = [
 						title: "Pepperoni Rolls",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.0,
 						interestFlag: { isDisplayed: true, text: "NEW!" },
@@ -4441,7 +4441,7 @@ const menuState = [
 						title: "Garlic Knots",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4480,7 +4480,7 @@ const menuState = [
 						title: "Original Breadsticks",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.29,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4519,7 +4519,7 @@ const menuState = [
 						title: "Garlic Parmesan Breadsticks",
 						image: {
 							imageName: "card4",
-							imageUrl: "card4Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.59,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4558,7 +4558,7 @@ const menuState = [
 						title: "Cheesesticks",
 						image: {
 							imageName: "card5",
-							imageUrl: "card5Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.99,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4597,7 +4597,7 @@ const menuState = [
 						title: "Bacon Cheesesticks",
 						image: {
 							imageName: "card6",
-							imageUrl: "card6Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.99,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4636,7 +4636,7 @@ const menuState = [
 						title: "Tuscan 6-Cheese Cheesestick",
 						image: {
 							imageName: "card7",
-							imageUrl: "card7Url.png",
+							imageUrl: images.sides,
 						},
 						price: 8.99,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4675,7 +4675,7 @@ const menuState = [
 						title: "Jalapeño Cheesesticks",
 						image: {
 							imageName: "card8",
-							imageUrl: "card8Url.png",
+							imageUrl: images.sides,
 						},
 						price: 11.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4714,7 +4714,7 @@ const menuState = [
 						title: "Jalapeño Bacon",
 						image: {
 							imageName: "card8",
-							imageUrl: "card8Url.png",
+							imageUrl: images.sides,
 						},
 						price: 11.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4765,7 +4765,7 @@ const menuState = [
 						type: "advertRowCard",
 						image: {
 							imageName: "advert1",
-							imageUrl: "advert1Url.png",
+							imageUrl: images.sides,
 						},
 						title: "OREO® COOKIE PAPA BITES",
 						price: 6.29,
@@ -4807,7 +4807,7 @@ const menuState = [
 						title: "Cinnamon Pull Aparts",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4846,7 +4846,7 @@ const menuState = [
 						title: "Chocolate Chip Cookie",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4885,7 +4885,7 @@ const menuState = [
 						title: "Double Choclate Chip Brownie",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3Url.png",
+							imageUrl: images.sides,
 						},
 						price: 7.5,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4936,7 +4936,7 @@ const menuState = [
 						title: "Pepsi",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 3.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -4975,7 +4975,7 @@ const menuState = [
 						title: "Mountain Dew",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 3.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5014,7 +5014,7 @@ const menuState = [
 						title: "Diet Pepsi",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3Url.png",
+							imageUrl: images.sides,
 						},
 						price: 3.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5053,7 +5053,7 @@ const menuState = [
 						title: "Aquafina",
 						image: {
 							imageName: "card4",
-							imageUrl: "card4Url.png",
+							imageUrl: images.sides,
 						},
 						price: 2.39,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5092,7 +5092,7 @@ const menuState = [
 						title: "Starry",
 						image: {
 							imageName: "card5",
-							imageUrl: "card5Url.png",
+							imageUrl: images.sides,
 						},
 						price: 3.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5131,7 +5131,7 @@ const menuState = [
 						title: "Starry",
 						image: {
 							imageName: "card6",
-							imageUrl: "card6Url.png",
+							imageUrl: images.sides,
 						},
 						price: 3.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5182,7 +5182,7 @@ const menuState = [
 						title: "Special Garlic Sauce",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5221,7 +5221,7 @@ const menuState = [
 						title: "Spicy Garlic Sauce",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 3.49,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5260,7 +5260,7 @@ const menuState = [
 						title: "Pizza Sauce",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5299,7 +5299,7 @@ const menuState = [
 						title: "Ranch Sauce",
 						image: {
 							imageName: "card4",
-							imageUrl: "card4Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5338,7 +5338,7 @@ const menuState = [
 						title: "Blue Cheese Sauce",
 						image: {
 							imageName: "card5",
-							imageUrl: "card5Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5377,7 +5377,7 @@ const menuState = [
 						title: "Honey Mustard Sauce",
 						image: {
 							imageName: "card6",
-							imageUrl: "card6Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5416,7 +5416,7 @@ const menuState = [
 						title: "Buffalo Spicy Sauce",
 						image: {
 							imageName: "card7",
-							imageUrl: "card7Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5455,7 +5455,7 @@ const menuState = [
 						title: "Barbeque Sauce",
 						image: {
 							imageName: "card8",
-							imageUrl: "card8Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5494,7 +5494,7 @@ const menuState = [
 						title: "Garlic Parmesan Sauce",
 						image: {
 							imageName: "card9",
-							imageUrl: "card9Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5533,7 +5533,7 @@ const menuState = [
 						title: "Cheese Sauce",
 						image: {
 							imageName: "card10",
-							imageUrl: "card10Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5572,7 +5572,7 @@ const menuState = [
 						title: "Cream Cheese Icing",
 						image: {
 							imageName: "card11",
-							imageUrl: "card11Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5618,7 +5618,7 @@ const menuState = [
 						title: "Special Seasonings",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.3,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5657,7 +5657,7 @@ const menuState = [
 						title: "Crushed Red Pepper",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.3,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5696,7 +5696,7 @@ const menuState = [
 						title: "Parmesan Cheese",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.3,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5742,7 +5742,7 @@ const menuState = [
 						title: "Pepperoncinis",
 						image: {
 							imageName: "card1",
-							imageUrl: "card1Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5781,7 +5781,7 @@ const menuState = [
 						title: "Jalapeño Peppers",
 						image: {
 							imageName: "card2",
-							imageUrl: "card2Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5820,7 +5820,7 @@ const menuState = [
 						title: "Banana Peppers",
 						image: {
 							imageName: "card3",
-							imageUrl: "card3Url.png",
+							imageUrl: images.sides,
 						},
 						price: 0.75,
 						interestFlag: { isDisplayed: false, text: null },
@@ -5859,7 +5859,7 @@ const menuState = [
 						title: "Anchovies",
 						image: {
 							imageName: "card4",
-							imageUrl: "card4Url.png",
+							imageUrl: images.sides,
 						},
 						price: 1.75,
 						interestFlag: { isDisplayed: false, text: null },
