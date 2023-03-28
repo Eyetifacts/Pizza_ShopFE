@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import menuInitialState from "../../productDef/menuInitialHomeState";
-import SpecialsSection from "./SpecialsSection";
+import React, { useState } from "react"
+import { useParams } from "react-router-dom"
+import specialsState from "../../productDef/specialsInitialHomeState"
+import SpecialsSection from "./SpecialsSection"
 
 const SpecialsTabPage = ({ params }) => {
 	function getCategory(menuSelection) {
@@ -15,17 +15,17 @@ const SpecialsTabPage = ({ params }) => {
 		}
 	}
 
-	let cat = useParams();
-	let x = getCategory(cat.category);
+	let cat = useParams()
+	let x = getCategory(cat.category)
 
-	const [menuState] = useState(menuInitialState);
-	const category = menuState[x].menuSections[0];
+	const [specials] = useState(specialsState)
+	const category = specials[x].menuSections[0]
 
 	return (
 		<div>
 			<SpecialsSection key={category.id} sectionObject={category} />
 		</div>
-	);
-};
+	)
+}
 
-export default SpecialsTabPage;
+export default SpecialsTabPage

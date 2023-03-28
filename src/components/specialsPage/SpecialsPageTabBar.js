@@ -1,10 +1,10 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import React from "react"
+import { NavLink, Outlet } from "react-router-dom"
 
 const tabLinks = [
 	{ text: "All Specials", to: "all-specials", id: 1 },
 	{ text: "Large Orders", to: "large-orders", id: 2 },
-];
+]
 
 const SpecialsPageTabBar = () => {
 	const activeStyle = { backgroundColor: "black", color: "white" }
@@ -24,7 +24,7 @@ const SpecialsPageTabBar = () => {
 			</nav>
 			<Outlet />
 		</div>
-	);
-};
+	)
+}
 
-export default SpecialsPageTabBar;
+export default SpecialsPageTabBar

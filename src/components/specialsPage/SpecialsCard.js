@@ -1,28 +1,35 @@
-import React from "react";
+import React from "react"
+import FlagComponent from "../FlagComponent"
 
-const SpecialsCard = ({ special }) => {
-	const { image, title, price, description } = special
+const SpecialsCard = ({ cardDetails }) => {
 	return (
 		<div className="flex space-x-5 border-b py-10">
-			<div>
-				<img src={image} alt={title} />
+			<div className="relative">
+				<img src={cardDetails.image.imageUrl} alt={cardDetails.title} />
+				{cardDetails.interestFlag.isDisplayed && (
+					<FlagComponent text={cardDetails.interestFlag.text} />
+				)}
 			</div>
 			<div>
 				<div className="flex justify-between mb-2">
 					<h3 className="uppercase font-bold text-2xl tracking-tight">
-						{title}
+						{cardDetails.title}
 					</h3>
 					<h3 className="text-red-700 font-bold text-2xl tracking-tight">
-						$ {price}
+						$ {cardDetails.price}
 					</h3>
 				</div>
 				<div className="space-y-3">
-					<p className="text-gray-700">{description}</p>
-					<button className="btn-primary">order now</button>
+					<p className="text-gray-700">{cardDetails.description}</p>
+					{cardDetails.buttonGroup.map((btn) => (
+						<button key={btn.id} className="ml-3 btn-primary">
+							{btn.buttonText}
+						</button>
+					))}
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default SpecialsCard;
+export default SpecialsCard
