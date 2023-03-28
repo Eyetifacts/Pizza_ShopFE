@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const SpecialsCard = ({ special }) => {
 	const { image, title, price, description } = special
@@ -22,7 +22,7 @@ const SpecialsCard = ({ special }) => {
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default SpecialsCard
+export default SpecialsCard;
