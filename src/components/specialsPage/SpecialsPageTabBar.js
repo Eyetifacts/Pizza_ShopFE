@@ -9,8 +9,8 @@ const tabLinks = [
 const SpecialsPageTabBar = () => {
 	const activeStyle = { backgroundColor: "black", color: "white" }
 	return (
-		<div className="mx-auto px-3 mt-5 md:px-5 lg:px-8 xl:px-15">
-			<nav className="flex space-x-4 text-center overflow-x-auto px-3 py-5 mb-3">
+		<div className="mx-auto mt-5 px-3 sm:px-12 lg:px-24">
+			<nav className="flex space-x-4 text-center overflow-x-auto pr-3 py-5 mb-3">
 				{tabLinks.map((link) => (
 					<NavLink
 						to={`/order/specials/${link.to}`}

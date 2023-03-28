@@ -20,7 +20,6 @@ const specialsState = [
 						price: 6.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: true, text: "New items" },
-						carryoutFlag: false,
 						description:
 							"Craving what you see? Our newest addition to your Papa Pairing possibilities: Wings! Get any of these and more delectable Papa Johns favorites for just $6.99 each whe you pair two or more.",
 						buttonGroup: [
@@ -42,7 +41,6 @@ const specialsState = [
 						price: 5.49,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: null },
-						carryoutFlag: false,
 						description:
 							"Eight tasty pop-able morsels can be enjoyed in three exciting new flavors: Chicken Parmesan, Jalapeño, and Cookie. Get a shareable treat that's easy to eat!",
 						buttonGroup: [
@@ -64,7 +62,6 @@ const specialsState = [
 						price: 8.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: "New items" },
-						carryoutFlag: true,
 						description:
 							"Choose your favorite topping on our large original or thin crust pizza!",
 						buttonGroup: [
@@ -86,7 +83,6 @@ const specialsState = [
 						price: 12.99,
 						featureCard: true,
 						interestFlag: { isDisplayed: true, text: "Limited time" },
-						carryoutFlag: false,
 						description:
 							"Our Crispy Parm Pizza features crispy Parmesan and Romano cheeses baked right onto the bottom of the crust. That’s right. It has cheese on the bottom! Flip pizza night on its head with extra flavor and extra cheese in every deliciously crispy bite.",
 						buttonGroup: [
@@ -108,7 +104,6 @@ const specialsState = [
 						price: 13.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: null },
-						carryoutFlag: false,
 						description: "New Yorl Style Two Topping Pizza",
 						buttonGroup: [
 							{
@@ -142,7 +137,6 @@ const specialsState = [
 						price: 54.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: null },
-						carryoutFlag: false,
 						description: "Five large 1-topping pizzas. Serves 10-15",
 						buttonGroup: [
 							{
@@ -163,7 +157,6 @@ const specialsState = [
 						price: 72.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: null },
-						carryoutFlag: false,
 						description:
 							"Five large 1-topping pizzas & 3 desserts. Serves 10-15.",
 						buttonGroup: [
@@ -185,7 +178,6 @@ const specialsState = [
 						price: 89.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: null },
-						carryoutFlag: false,
 						description:
 							"Five large 1-Topping pizzas plus 3 bread sides & 3 desserts. Serves 10-15.",
 						buttonGroup: [
@@ -207,7 +199,6 @@ const specialsState = [
 						price: 8.99,
 						featureCard: false,
 						interestFlag: { isDisplayed: false, text: null },
-						carryoutFlag: false,
 						description: "Four 2-liter Pepsi products.",
 						buttonGroup: [
 							{
