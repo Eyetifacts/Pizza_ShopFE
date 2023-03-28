@@ -20,18 +20,16 @@ const MenuPage = () => {
 
 	return (
 		<>
-			<section className="bg-slate-100">
-				<div className="flex flex-row mx-20">
+			<section>
+				<div className="flex flex-row items-center scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-slate-800 mx-auto p-5">
 					<LeadCard item={leadItem} />
-					<div className="flex flex-row items-center scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-slate-800 mx-auto p-5">
-						{carouselItems.map((item) => (
-							<MenuCarouselCard
-								item={item}
-								key={item.title}
-								bgImg={images.pizza}
-							/>
-						))}
-					</div>
+					{carouselItems.map((item) => (
+						<MenuCarouselCard
+							item={item}
+							key={item.title}
+							bgImg={images.pizza}
+						/>
+					))}
 				</div>
 			</section>
 			<MenuSection key={sectionTwo.id} sectionObject={sectionTwo} />
