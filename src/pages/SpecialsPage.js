@@ -46,16 +46,16 @@ const SpecialsPage = () => {
 	return (
 		<div className="p-12">
 			<nav className="flex space-x-4">
-				<a
+				<button
 					href="#"
 					className="px-2 py-1 rounded-full hover:bg-black hover:text-white active:bg-black active:text-white text-lg font-semibold uppercase tracking-tight">
 					All Specials
-				</a>
-				<a
+				</button>
+				<button
 					href="#"
 					className="px-2 py-1 rounded-full hover:bg-black hover:text-white active:bg-black active:text-white text-lg font-semibold uppercase tracking-tight">
 					Large Orders
-				</a>
+				</button>
 			</nav>
 			<div>
 				<h1 className="uppercase text-4xl tracking-tight font-extrabold py-4">

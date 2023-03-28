@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const FlagComponent = ({ text }) => {
 	return (
@@ -8,7 +8,7 @@ const FlagComponent = ({ text }) => {
 			</p>
 			<div className="w-0 h-0 border-y-[16px] border-x-[10px] border-solid border-transparent border-l-red-600 border-t-red-600"></div>
 		</div>
-	)
-}
+	);
+};
 
-export default FlagComponent
+export default FlagComponent;

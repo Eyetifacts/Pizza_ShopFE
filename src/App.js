@@ -13,6 +13,9 @@ import MenuPageTabBar from "./components/menuPage/MenuPageTabBar"
 import MenuTabPage from "./components/menuPage/MenuTabPage"
 
 import SpecialsPage from "./pages/SpecialsPage"
+import SpecialsPageTabBar from "./components/specialsPage/SpecialsPageTabBar"
+import SpecialsTabPage from "./components/specialsPage/SpecialsTabPage"
+
 // import PapaRewardsPage from "./pages/PapaRewardsPage";
 
 // Base route "/" must be be the last one listed when using HashRouter below
@@ -30,7 +33,11 @@ function App() {
 					<Route path=":category" element={<MenuTabPage />} />
 					<Route index element={<MenuPage />} />
 				</Route>
-				<Route exact path="/order/specials" element={<SpecialsPage />} />
+				<Route exact path="/order/specials" element={<SpecialsPageTabBar />}>
+					<Route path="all-specials" element={<SpecialsPage />} />
+					<Route path=":category" element={<SpecialsTabPage />} />
+					<Route index element={<SpecialsPage />} />
+				</Route>
 				{/* <Route exact path="/order/papa-rewards" element={<PapaRewardsPage />} /> */}
 				<Route exact path="/" element={<HomePage />} />
 			</Routes>
