@@ -13,21 +13,21 @@ const LogoBar = () => {
 
 	return (
 		<>
-			<div className="h-16 flex flex-row items-center gap-3 text-lg px-3 border-b border-b-gray">
+			<div className="h-22 py-1 flex flex-row items-center gap-3 px-3 text-2xl border-b border-b-gray">
 				<NavLink 
 					to="/"
 				>
 					<img 
-						width="150px" 
+						width="200px" 
 						src={images.logo} 
 						alt="Papa Thomas logo"
 						className="hover:bg-yellow-300"
 					/>
 				</NavLink>
-				<div className="flex flex-row font-semibold gap-3 justify-end ml-auto items-center">
-					<div>START YOUR ORDER</div>
-					<button className="hidden lg:flex flex-row gap-2 align-center hover:bg-gray p-3 rounded-lg items-center">
-						<BsGlobe size={24} />
+				<div className="flex flex-row font-extrabold gap-3 justify-end ml-auto items-center">
+					<div className="mr-6">START YOUR ORDER</div>
+					<button className="hidden lg:flex flex-row gap-2 align-center hover:bg-gray px-7 rounded-lg items-center">
+						<BsGlobe size={32} />
 						<h2>EN</h2>
 						<GoChevronDown size={20} style={{ color: "black" }} />
 					</button>
@@ -35,7 +35,7 @@ const LogoBar = () => {
 						<h2>LOG IN</h2>
 						<GoChevronDown size={20} style={{ color: "black" }} />
 					</button>
-					<button className="hidden lg:flex btn-primary-lg">SIGN UP</button>
+					<button className="hidden lg:inline-block btn-primary-lg text-2xl h-14 align-middle px-2 mx-2">SIGN UP</button>
 					<GiHamburgerMenu
 						size={32}
 						style={{ color: "black" }}
