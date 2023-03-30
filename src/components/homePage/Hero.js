@@ -4,12 +4,12 @@ import pizzaHeroVideo from "../../videos/pizzaHeroVideo.mp4"
 const Hero = () => {
 	return (
 		<div className="relative w-full">
-			<div className="h-120 lg:h-128 overflow-hidden">
+			<div className="h-120 lg:h-162 overflow-hidden">
 				<video
 					autoPlay
 					loop
 					muted
-					className="object-cover items-center overflow-x-hidden h-128 w-full">
+					className="object-cover items-center overflow-x-hidden w-full">
 					<source src={pizzaHeroVideo} type="video/mp4" />
 				</video>
 				<div className="absolute flex flex-col top-0 bottom-0 left-0 right-0 justify-center items-start bg-black bg-opacity-10">
