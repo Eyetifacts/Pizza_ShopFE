@@ -36,7 +36,7 @@ const HomePage = () => {
       <PromoCards />
       <div>
         {loading && <p>Loading...</p>}
-        {!loading && data}
+        {!loading && <h2>{data[0].title}</h2>}
       </div>
     </>
   );

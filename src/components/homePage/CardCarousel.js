@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Card from "./Card";
 
 import { images } from '../../constants';
@@ -55,14 +55,33 @@ const carouselItems = [
 ];
 
 const CardCarousel = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/menu/menuItems`)
+    .then(res => res.json())
+    .then(
+      (result) => {
+        console.log(result);
+        setLoading(false);
+        setData(result);
+      }
+    )
+    .catch((err) => {
+      console.error(`An error occurred: ${err}`)
+    });
+  }, [])
+
   return (
 
       <div className="flex flex-row items-center scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-slate-800 my-20 w-full xl:w-1280 mx-auto">
-        {carouselItems.map((item) => (
+        {loading && <p>Loading...</p>}
+        {!loading && data.map((item) => (
           <Card item={item} key={item.title} />
         ))}
       </div>
-
   );
 };
 

@@ -1,7 +1,9 @@
 import React from "react"
 
 const Card = ({ item }) => {
-	const { title, price, newItem, bgImg, linkText } = item
+	const { title, price, newItem, bgImg, linkText } = item;
+	var formattedPrice = price.$numberDecimal;
+	console.log(bgImg);
 
 	return (
 		<div className="relative mx-5 mb-10 w-80 shrink-0 h-96 cursor-pointer">
@@ -19,7 +21,7 @@ const Card = ({ item }) => {
 					</p>
 				)}
 				{price && (
-					<h2 className="absolute ml-5 mt-44 p-1 px-2 text-2xl font-semibold bg-red-600 text-white -skew-y-6 w-auto text-center uppercase">{`STARTING AT $${price}`}</h2>
+					<h2 className="absolute ml-5 mt-44 p-1 px-2 text-2xl font-semibold bg-red-600 text-white -skew-y-6 w-auto text-center uppercase">{`STARTING AT $${formattedPrice}`}</h2>
 				)}
 				<h2 className="absolute ml-5 mt-60 text-2xl font-semibold text-white uppercase">
 					{title}
