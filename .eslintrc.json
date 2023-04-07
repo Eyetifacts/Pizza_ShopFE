@@ -1,0 +1,22 @@
+{
+    "extends": [
+      "plugin:react/recommended"
+    ],
+    "plugins": ["react-hooks"],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/no-render-return-value": "off",
+      "react/display-name": "off",
+      "react/prop-types": "off"
+    },
+    "env": {
+      "browser": true
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    }
+  }

@@ -13,11 +13,11 @@ const MenuPage = () => {
 		.then(res => res.json())
 		.then(
 		  (result) => {
-			var resultArray = [result];
-			console.log('Result Array: \n ' + resultArray);
+			console.log(result);
 			setLoading(false);
-			setMenuState(result);
-			result.map(items => console.log('Items: ' + items))
+			setMenuState(result, () => {
+				console.log(result)
+			});
 		  }
 		)
 		.catch((err) => {
@@ -25,36 +25,37 @@ const MenuPage = () => {
 		});
 	  }, [])
 
-	/* const carouselItems = menuState[0].menuCarousel.carouselCards
-	const leadItem = menuState[0].menuCarousel.leadCard
+	  console.log(menuState);
+	const carouselItems = menuState[0].menuSections[0].menuCarousel.carouselCards
+	const leadItem = menuState[0].menuSections[0].menuCarousel.leadCard
 	const sectionTwo = menuState[1]
 	const sectionThree = menuState[2]
 	const sectionFour = menuState[3]
 	const sectionFive = menuState[4]
 	const sectionSix = menuState[5]
 	const sectionSeven = menuState[6]
-	const sectionEight = menuState[7] */
+	const sectionEight = menuState[7]
 
 
 	return (
 		<>
 			{loading && <p>Loading...</p>}
-			{menuState && (
+			{menuState != null ? (
 				<div>
 					<section>
-						<h1>{menuState.map((items) => (
-							<p>{items}</p>
-						))}</h1>
-						{/* <div className="flex flex-row items-center scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-slate-800 mx-auto p-5">
+						<h1>{menuState[0].menuSections[0].title}</h1>
+						<h1>{menuState[1].menuSections[0].title}</h1>
+						<h1>{menuState[2].menuSections[0].title}</h1>
+						{<div className="flex flex-row items-center scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-slate-800 mx-auto p-5">
 							<LeadCard item={leadItem} />
 							{carouselItems.map((item) => (
 								<MenuCarouselCard
 									item={item}
-									key={item.title}
+									key={item._id}
 									bgImg={images.pizza}
 								/>
 							))}
-						</div> */}
+						</div>}
 					</section>
 					{/* <MenuSection key={sectionTwo.id} sectionObject={sectionTwo} />
 					<MenuSection key={sectionThree.id} sectionObject={sectionThree} />
@@ -64,7 +65,7 @@ const MenuPage = () => {
 					<MenuSection key={sectionSeven.id} sectionObject={sectionSeven} />
 					<MenuSection key={sectionEight.id} sectionObject={sectionEight} /> */}
 				</div>
-			)}
+			) : <p>There was a problem...</p>}
 		</>
 	)
 }
