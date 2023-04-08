@@ -38,8 +38,8 @@ const MenuPage = () => {
         <div>
           <section>
             <h1>
-              {menuState.map((items, index) => (
-                <p key={index}>{items}</p>
+              {menuState.map((item, index) => (
+                <p key={index}>{item.title}</p>
               ))}
             </h1>
             {
