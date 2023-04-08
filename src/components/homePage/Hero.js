@@ -28,7 +28,7 @@ const Hero = () => {
 							CRISPY PARM PIZZA
 						</h2>
 						<h2 className="text-white text-2xl font-bold px-3 drop-shadow-xl">
-							CHEESE ON THE BOTTOM? FLIPPIN'AWESOME!
+							CHEESE ON THE BOTTOM? FLIPPIN AWESOME!
 						</h2>
 						<div className="mt-8 -mb-20 flex flex-row gap-3">
 							<button className="btn-primary-lg border-2 border-white">

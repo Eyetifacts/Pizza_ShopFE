@@ -23,6 +23,8 @@ const MenuPage = () => {
       });
   }, []);
 
+  
+
   const carouselItems = menuState && menuState[0].menuItems;
   const leadItem = menuState && menuState[0];
   const sectionTwo = menuState && menuState[1];
