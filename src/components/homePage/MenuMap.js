@@ -1,55 +1,56 @@
 import React from "react"
 import { images } from "../../constants"
+import { NavLink } from "react-router-dom";
 
 const menuItems = [
 	{
 		title: "Specials",
-		image: images.special,
-		link: "",
+		imageUrl: "https://drive.google.com/file/d/1Cm5N4FKKGLtNZI1iAzmIFaTgZbtN4qYc/view?usp=share_link",
+		NavLink: "",
 	},
 	{
 		title: "Pizza",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Papa Bowls",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Papa Bites",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Papadias",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Wraps",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Sides",
-		image: images.sides,
+		imageUrl: images.sides,
 		link: "",
 	},
 	{
 		title: "Desserts",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Drinks",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 	{
 		title: "Extras",
-		image: images.pizza,
+		imageUrl: images.pizza,
 		link: "",
 	},
 ]
@@ -66,7 +67,7 @@ const MenuMap = () => {
 					<div key={item.title} className="group hover:cursor-pointer">
 						<div className="h-min overflow-hidden rounded-full">
 							<img
-								src={item.image}
+								src={item.imageUrl}
 								alt={item.title}
 								className="rounded-full w-32 h-32 group-hover:scale-125 transition-all duration-300"
 							/>

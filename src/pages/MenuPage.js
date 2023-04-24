@@ -14,7 +14,7 @@ const MenuPage = () => {
     fetch(`http://localhost:3000/menu/menuItems`)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
+        console.log(result[0].menuSections[0].menuCarousel.carouselCards[0].image.imageUrl);
         setLoading(false);
         setMenuState(result);
       })
