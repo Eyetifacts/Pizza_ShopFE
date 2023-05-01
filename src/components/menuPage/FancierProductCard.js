@@ -30,8 +30,8 @@ const FancierProductCard = ({ cardDetails }) => {
 				</div>
 				{/* <div>{displayProductCardForm(cardDetails)}</div> */}
 				<div className="h-20 mt-2 mb-5 pt-8 left-0 bottom-0">
-					{cardDetails.buttonGroup.map((btn) => (
-						<button key={btn.id} className="ml-3 btn-primary">
+					{cardDetails.buttonGroup.map((btn, index) => (
+						<button key={index} className="ml-3 btn-primary">
 							{btn.buttonText}
 						</button>
 					))}
