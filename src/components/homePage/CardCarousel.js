@@ -55,17 +55,17 @@ const carouselItems = [
 ];
 
 const CardCarousel = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // const [data, setData] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
 
   return (
 
       <div className="flex flex-row items-center scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-slate-800 my-20 w-full xl:w-1280 mx-auto">
-        {loading && <p>Loading...</p>}
+        {/* {loading && <p>Loading...</p>}
         {!loading && data.map((item) => (
           <Card item={item} key={item.title} />
-        ))}
+        ))} */}
       </div>
   );
 };

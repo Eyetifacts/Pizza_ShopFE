@@ -10,6 +10,8 @@ const HomePage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const homeState = data;
+
   // Note: the empty deps array [] means
   // this useEffect will run once
   // similar to componentDidMount()
@@ -18,7 +20,7 @@ const HomePage = () => {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result);
+          // console.log(result);
           setLoading(false);
           setData(result);
         })

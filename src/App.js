@@ -9,8 +9,8 @@ import Footer from "./components/footer/Footer"
 
 import HomePage from "./pages/HomePage"
 import MenuPage from "./pages/MenuPage"
-import MenuPageTabBar from "./components/menuPage/MenuPageTabBar"
-import MenuTabPage from "./components/menuPage/MenuTabPage"
+// import MenuPageTabBar from "./components/menuPage/MenuPageTabBar"
+// import MenuTabPage from "./components/menuPage/MenuTabPage"
 
 import SpecialsPage from "./pages/SpecialsPage"
 import SpecialsPageTabBar from "./components/specialsPage/SpecialsPageTabBar"
@@ -28,11 +28,11 @@ function App() {
 			</nav>
 
 			<Routes>
-				<Route exact path="/order/menu" element={<MenuPageTabBar />}>
-					<Route path="pizza" element={<MenuPage />} />
-					<Route path=":category" element={<MenuTabPage />} />
-					<Route index element={<MenuPage />} />
-				</Route>
+				<Route index path="/order/menu" element={<MenuPage />} />
+				{/* <Route exact path="/order/menu" element={<MenuPageTabBar />}> */}
+					{/* <Route path="pizza" element={<MenuPage />} /> */}
+					{/* <Route path=":category" element={<MenuTabPage />} /> */}
+				{/* </Route> */}
 				<Route exact path="/order/specials" element={<SpecialsPageTabBar />}>
 					<Route path="all-specials" element={<SpecialsPage />} />
 					<Route path=":category" element={<SpecialsTabPage />} />
