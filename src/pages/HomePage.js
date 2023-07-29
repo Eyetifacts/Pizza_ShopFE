@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/homePage/Hero";
 import CardCarousel from "../components/homePage/CardCarousel";
-import MenuMap from "../components/footer/MenuMap";
+import MenuMap from "../components/homePage/MenuMap";
 import MobileAppBanner from "../components/homePage/MobileAppBanner";
 import PromoCards from "../components/homePage/PromoCards";
 
