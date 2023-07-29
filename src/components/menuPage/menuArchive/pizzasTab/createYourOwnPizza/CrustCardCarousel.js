@@ -1,1 +1,0 @@
-// Card Sliding Carousel like the one on home page that offers different crusts to start

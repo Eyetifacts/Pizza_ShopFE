@@ -1,7 +1,7 @@
 import React from "react"
 import ProductCard from "./ProductCard"
 import FancierProductCard from "./FancierProductCard"
-import BannerCard from "./BannerCard"
+import BannerCard from "../BannerCard"
 
 const MenuSection = ({ sectionObject }) => {
 	if (sectionObject.type === "bannerCard") {
