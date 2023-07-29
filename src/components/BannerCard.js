@@ -1,5 +1,5 @@
 import React from "react"
-import FlagComponent from "../FlagComponent"
+import FlagComponent from "./FlagComponent"
 
 const BannerCard = ({ cardDetails }) => {
 	const { image, title, interestFlag, description, buttonGroup } = cardDetails

@@ -16,7 +16,7 @@ import SpecialsPage from "./pages/SpecialsPage"
 import SpecialsPageTabBar from "./components/specialsPage/SpecialsPageTabBar"
 import SpecialsTabPage from "./components/specialsPage/SpecialsTabPage"
 
-// import PapaRewardsPage from "./pages/PapaRewardsPage";
+import PapaRewardsPage from "./pages/PapaRewardsPage";
 
 // Base route "/" must be be the last one listed when using HashRouter below
 
@@ -38,7 +38,7 @@ function App() {
 					<Route path=":category" element={<SpecialsTabPage />} />
 					<Route index element={<SpecialsPage />} />
 				</Route>
-				{/* <Route exact path="/order/papa-rewards" element={<PapaRewardsPage />} /> */}
+				<Route exact path="/order/papa-rewards" element={<PapaRewardsPage />} />
 				<Route exact path="/" element={<HomePage />} />
 			</Routes>
 
